@@ -27,6 +27,23 @@ export class HomeComponent {
     }
   }
 
+  onMouseClick() {
+    if (!this.showFirework) {
+      this.showFirework = true;
+      this.isHovered = true;
+
+
+      if (this.fireworkTimeout) {
+        clearTimeout(this.fireworkTimeout);
+      }
+
+      this.fireworkTimeout = setTimeout(() => {
+        this.showFirework = false;
+        this.isHovered = false;
+      }, 1700);
+    }
+  }
+
   onMouseLeave() {
   }
 }
