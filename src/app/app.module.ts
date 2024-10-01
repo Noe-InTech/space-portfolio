@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { FireworkComponent } from './firework/firework.component';
+import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     FireworkComponent,
+    NavigationBarComponent,
   ],
   imports: [
     BrowserModule,

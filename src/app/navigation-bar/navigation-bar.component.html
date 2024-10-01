@@ -1,0 +1,14 @@
+<nav [class.active]="isMenuOpen">
+  <div class="burger" (click)="toggleMenu()" [class.open]="isMenuOpen">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+  <div class="menu" [class.open]="isMenuOpen">
+    <div class="menu-container">
+      <a routerLink="/home" (click)="closeMenu()">Accueil</a>
+      <a routerLink="/skills" (click)="closeMenu()">Compétences</a>
+      <a routerLink="/contact" (click)="closeMenu()">Contact</a>
+    </div>
+  </div>
+</nav>

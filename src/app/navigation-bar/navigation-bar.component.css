@@ -1,0 +1,95 @@
+nav {
+  position: fixed; /* Rendre la barre de navigation fixe */
+  top: 0; /* Positionner en haut */
+  left: 0; /* Alignement à gauche */
+  width: 100%; /* Prendre toute la largeur */
+  padding: 15px;
+  color: white;
+  z-index: 1000; /* Assurer que la navbar est au-dessus des autres éléments */
+  font-family: "Mosk Bold 700";
+  font-size: 7dvh;
+  background-color: transparent; /* Fond transparent par défaut */
+  transition: background-color 0.3s ease; /* Transition pour le changement de couleur */
+}
+
+nav.active {
+  background-color: hsl(316, 30%, 36%); /* Couleur de fond lorsque le menu est ouvert */
+}
+
+.burger {
+  cursor: pointer;
+  width: 40px; /* Largeur du burger */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Espace entre les lignes */
+  position: relative; /* Pour contrôler le z-index */
+  z-index: 1100; /* Assurez-vous que le burger est au-dessus du menu */
+}
+
+.line {
+  height: 3px; /* Épaisseur des lignes */
+  width: 100%; /* Prendre toute la largeur */
+  background-color: white; /* Couleur des lignes */
+  transition: all 0.3s ease; /* Animation des lignes */
+  margin: 5px 0; /* Espacement entre les lignes */
+}
+
+/* Animation pour l'état ouvert */
+.burger.open .line:nth-child(1) {
+  transform: rotate(45deg) translateY(20px); /* Rotation et translation de la première ligne */
+}
+
+.burger.open .line:nth-child(2) {
+  opacity: 0; /* Rendre la ligne du milieu invisible */
+}
+
+.burger.open .line:nth-child(3) {
+  transform: rotate(-45deg) translateY(-20px); /* Rotation et translation de la dernière ligne */
+}
+
+/* Styles du menu */
+.menu {
+  position: fixed; /* Fixe le menu à l'écran */
+  top: -100vh; /* Commence hors de la vue en haut */
+  left: 0; /* Aligne à gauche */
+  background-color: hsl(316, 30%, 36%); /* Couleur de fond du menu */
+  width: 100%; /* Prend toute la largeur */
+  height: 100vh; /* Prend toute la hauteur de l'écran */
+  color: white;
+  z-index: 1000; /* Assure que le menu est au-dessus */
+  display: flex; /* Utilisation du flexbox pour centrer le contenu */
+  justify-content: center; /* Centre le contenu horizontalement */
+  align-items: center; /* Centre le contenu verticalement */
+  transition: top 0.3s ease; /* Animation d'ouverture */
+}
+
+.menu.open {
+  top: 0; /* Fait apparaître le menu en descendant */
+}
+
+.menu-container {
+  display: flex; /* Utilisation du flexbox pour l'alignement */
+  flex-direction: column; /* Aligne les liens en colonne */
+  align-items: center; /* Centre les éléments horizontalement */
+  justify-content: center; /* Centre les éléments verticalement */
+  height: 100%; /* Prend toute la hauteur */
+}
+
+.menu-container a {
+  padding-top: 5rem; /* Espacement au-dessus des liens */
+}
+
+.menu ul {
+  list-style: none; /* Enlève les puces de la liste */
+  padding: 0; /* Enlève le padding par défaut */
+}
+
+.menu li {
+  margin: 20px 0; /* Marges entre les éléments de la liste */
+}
+
+.menu a {
+  color: white; /* Couleur du texte des liens */
+  text-decoration: none; /* Enlève le soulignement */
+  font-size: 24px; /* Taille de police */
+}
