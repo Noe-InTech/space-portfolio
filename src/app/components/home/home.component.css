@@ -126,13 +126,14 @@ body {
   margin-bottom: 5vh;
 }
 
-.it-skill-container {
+.skill-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 20px;
   justify-items: center;
   align-items: center;
   width: 100%;
+  padding-top: 10dvh;
 }
 
 .skill {
@@ -145,6 +146,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 5dvh;
 }
 
 .skill:hover {
@@ -161,7 +163,7 @@ body {
     font-size: 4dvh;
   }
 
-  .it-skill-container {
+  .skill-container {
     grid-template-columns: 1fr; /* Empile les éléments en une seule colonne */
   }
 
