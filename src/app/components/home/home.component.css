@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+}
+
+.section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.home-section {
+  background-color: hsl(316, 30%, 36%);
+  color: white;
+}
+
+.home-text {
+  text-align: left;
+  font-family: "Mosk Bold 700";
+  font-size: 7dvh;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#home-hi {
+  transform: rotate(-3deg);
+  font-family: "Jenthill";
+  font-size: 4dvh;
+  padding-bottom: 2rem;
+}
+
+.contrast {
+  color: hsl(316, 30%, 36%);
+  text-shadow:
+    -1px -1px 0 #ffffff,
+    1px -1px 0 #ffffff,
+    -1px 1px 0 #ffffff,
+    1px 1px 0 #ffffff;
+}
+
+.animated-word {
+  display: inline-block;
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+  position: relative;
+}
+
+.animated-word {
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+}
+
+.animated-word.active {
+  transform: translateY(-5px) rotate(-2deg);
+  color: #ffcc00;
+}
+
+.right-home-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(316, 30%, 36%);
+  width: 50dvw;
+}
+
+.left-home-section {
+  position: relative;
+  color: hsl(316, 30%, 36%);
+  width: 50dvw;
+  display: flex;
+  height: 100%;
+}
+
+.home-left-part1,
+.home-left-part2 {
+  height: 100%;
+}
+
+.home-left-part1 {
+  background-color: hsl(274, 4%, 18%);
+  width: 65%;
+}
+
+.home-left-part2 {
+  background-color: hsl(316, 30%, 36%);
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30dvw;
+  height: auto;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .left-home-section {
+    display: none;
+  }
+
+  .right-home-section {
+    width: 100%;
+  }
+}
+
+.second-section {
+  background-color: hsl(263, 29%, 32%);
+}

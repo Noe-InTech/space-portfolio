@@ -1,0 +1,27 @@
+<div id="home" class="section home-section">
+  <div class="left-home-section">
+    <div class="home-left-part1"></div>
+    <div class="home-left-part2"></div>
+    <img class="logo" src="assets/images/MonLogoBlanc.svg" alt="Noé" />
+  </div>
+  <div class="right-home-section">
+    <div class="home-text">
+      <p id="home-hi">👋 Bonjour, je suis Noé !</p>
+      <p>
+        Étudiant en <br /><span class="contrast">ingénierie du logiciel</span
+        >,<br />
+        je transforme des idées <br />en solutions
+        <span
+          class="contrast animated-word"
+          [ngClass]="{ active: isHovered }"
+          (mouseenter)="onMouseEnter()"
+          (mouseleave)="onMouseLeave()"
+          >interactives</span
+        >.
+      </p>
+      <app-firework *ngIf="showFirework"></app-firework>
+    </div>
+  </div>
+</div>
+
+<div class="section second-section"></div>
