@@ -16,8 +16,13 @@
           [ngClass]="{ active: isHovered }"
           (mouseenter)="onMouseEnter()"
           (mouseleave)="onMouseLeave()"
-          >interactives</span
-        >.
+        >
+          interactives
+          <span class="mouse-emoji">
+            <img src="assets/images/yellowPointer.png" />
+          </span>
+        </span>
+        .
       </p>
       <app-firework *ngIf="showFirework"></app-firework>
     </div>

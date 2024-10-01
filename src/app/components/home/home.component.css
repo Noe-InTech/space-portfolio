@@ -109,7 +109,38 @@ body {
   }
 }
 
-/*SECTION 2*/
+.mouse-emoji {
+  position: absolute;
+  display: inline-block;
+  animation: click-animation 1.5s ease-in-out infinite;
+  bottom: -10px; /* Ajuste la position du curseur par rapport au texte */
+  right: -20px; /* Ajuste la position horizontale */
+}
+
+.mouse-emoji img {
+  width: 20px;
+  height: auto;
+}
+
+@keyframes click-animation {
+  0% {
+    transform: translate(0, 0) scale(1); /* Point de départ */
+  }
+  50% {
+    transform: translate(-5px, -5px) scale(0.9); /* Simule le déplacement vers le bas */
+  }
+  60% {
+    transform: translate(0px, 0px) scale(1); /* Retour à la position initiale */
+  }
+  100% {
+    transform: translate(0, 0) scale(1); /* Répète l'animation */
+  }
+}
+
+.animated-word {
+  position: relative;
+}
+
 /*SECTION 2*/
 .second-section {
   background-color: hsl(263, 29%, 32%);
