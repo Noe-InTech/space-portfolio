@@ -10,7 +10,6 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 1rem;
 }
 
 .home-text {
@@ -98,6 +97,9 @@ body {
 }
 
 @media (max-width: 768px) {
+  .home-section {
+    padding: 1rem;
+  }
   .left-home-section {
     display: none;
   }
