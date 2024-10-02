@@ -43,9 +43,13 @@ nav.active {
 .line {
   height: 3px;
   width: 100%;
-  background-color: white;
+  background-color: white; /* Couleur par défaut */
   transition: all 0.3s ease;
   margin: 5px 0;
+}
+
+.line.white {
+  background-color: rgba(255, 255, 255, 0.8); /* Ajustez ici si nécessaire */
 }
 
 .burger.open .line:nth-child(1) {
@@ -88,7 +92,12 @@ nav.active {
 }
 
 .menu-container a {
-  padding-top: 5rem;
+  margin-top: 5rem;
+}
+
+.menu-container a:hover {
+  text-decoration-style: wavy;
+  text-decoration-color: var(--white);
 }
 
 .menu ul {
@@ -102,7 +111,7 @@ nav.active {
 
 .menu a {
   color: white;
-  text-decoration: none;
+  /* text-decoration: none; */
   font-size: 24px;
 }
 
@@ -113,5 +122,9 @@ nav.active {
 
   .burger.open .line {
     background-color: white;
+  }
+
+  .menu-title {
+    top: 0.2rem;
   }
 }

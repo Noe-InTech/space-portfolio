@@ -4,8 +4,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
-import { FireworkComponent } from './firework/firework.component';
-import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
+import { FireworkComponent } from './components/firework/firework.component';
+import { NavigationBarComponent } from './components/navigation-bar/navigation-bar.component';
+import { CovoitSanteComponent } from './covoit-sante/covoit-sante.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { NavigationBarComponent } from './navigation-bar/navigation-bar.componen
     HomeComponent,
     FireworkComponent,
     NavigationBarComponent,
+    CovoitSanteComponent,
   ],
   imports: [
     BrowserModule,

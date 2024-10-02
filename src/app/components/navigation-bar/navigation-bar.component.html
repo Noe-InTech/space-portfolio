@@ -1,0 +1,25 @@
+<nav [class.active]="isMenuOpen">
+  <div class="burger" (click)="toggleMenu()" [class.open]="isMenuOpen">
+    <div [class.white]="isDarkBackground" class="line"></div>
+    <div [class.white]="isDarkBackground" class="line"></div>
+    <div [class.white]="isDarkBackground" class="line"></div>
+  </div>
+  <div class="menu" [class.open]="isMenuOpen">
+    <div class="menu-container">
+      <h1 class="menu-title">Noé Moussa</h1>
+      <div class="menu-container">
+        <h1 class="menu-title">Noé Moussa</h1>
+        <a class="menu-link" (click)="scrollTo('home'); closeMenu()">Accueil</a>
+        <a class="menu-link" (click)="scrollTo('skills'); closeMenu()"
+          >Compétences</a
+        >
+        <a class="menu-link" (click)="scrollTo('projects'); closeMenu()"
+          >Projets</a
+        >
+        <a class="menu-link" routerLink="/contact" (click)="closeMenu()"
+          >Contact</a
+        >
+      </div>
+    </div>
+  </div>
+</nav>
