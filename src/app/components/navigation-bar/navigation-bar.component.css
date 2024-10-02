@@ -92,12 +92,33 @@ nav.active {
 }
 
 .menu-container a {
+  position: relative;
+  color: white;
+  font-size: 24px;
   margin-top: 5rem;
+  text-decoration: none; /* Retire la décoration par défaut */
+  transition:
+    color 0.3s,
+    text-decoration-color 0s 0.3s; /* Transition pour la couleur et la décoration */
+}
+
+.menu-container a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--white);
+  transition: width 0.3s;
 }
 
 .menu-container a:hover {
-  text-decoration-style: wavy;
-  text-decoration-color: var(--white);
+  cursor: pointer;
+}
+
+.menu-container a:hover::before {
+  width: 100%;
 }
 
 .menu ul {
@@ -107,12 +128,6 @@ nav.active {
 
 .menu li {
   margin: 20px 0;
-}
-
-.menu a {
-  color: white;
-  /* text-decoration: none; */
-  font-size: 24px;
 }
 
 @media (max-width: 768px) {
