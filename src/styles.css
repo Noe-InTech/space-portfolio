@@ -1,20 +1,24 @@
+:root {
+  --main-bg-color: hsl(263, 29%, 32%);
+  --primary-color: hsl(316, 30%, 36%);
+  --secondary-color: hsl(274, 4%, 18%);
+  --white: #ffffff;
+}
+
 *,
 html,
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
-
 @font-face {
-  font-family: 'Jenthill';
-  src: url('/assets/fonts/Jenthill.otf');
+  font-family: "Jenthill";
+  src: url("/assets/fonts/Jenthill.otf");
 }
 
-
 @font-face {
-  font-family: 'Mosk Bold 700';
-  src: url('/assets/fonts/Mosk Bold 700.ttf');
+  font-family: "Mosk Bold 700";
+  src: url("/assets/fonts/Mosk Bold 700.ttf");
 }
