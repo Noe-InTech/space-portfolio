@@ -22,3 +22,8 @@ body {
   font-family: "Mosk Bold 700";
   src: url("/assets/fonts/Mosk Bold 700.ttf");
 }
+
+::selection {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
