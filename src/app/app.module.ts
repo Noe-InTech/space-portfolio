@@ -8,6 +8,7 @@ import { FireworkComponent } from './components/firework/firework.component';
 import { NavigationBarComponent } from './components/navigation-bar/navigation-bar.component';
 import { CovoitSanteComponent } from './covoit-sante/covoit-sante.component';
 import { OptivexComponent } from './optivex/optivex.component';
+import { LilasComponent } from './lilas/lilas.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { OptivexComponent } from './optivex/optivex.component';
     NavigationBarComponent,
     CovoitSanteComponent,
     OptivexComponent,
+    LilasComponent,
   ],
   imports: [
     BrowserModule,
