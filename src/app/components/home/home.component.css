@@ -202,3 +202,216 @@ body {
     width: 100%; /* Prend toute la largeur disponible dans chaque colonne */
   }
 }
+/* SECTION PRÉSENTATION */
+.presentation-section {
+  color: var(--white);
+  background-color: var(--primary-color);
+  padding: 10vh 5vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.presentation-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5vw;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.presentation-text {
+  width: 50%;
+  font-size: 2.2dvh;
+  line-height: 1.6;
+  font-family: "Mosk Bold 700";
+  color: black; /* Texte en noir */
+}
+
+.intro-text {
+  margin-bottom: 2dvh;
+  font-size: 2dvh;
+  color: black; /* Texte en noir */
+}
+
+.bold {
+  font-weight: bold;
+  color: black; /* Assure que le texte en gras reste noir */
+}
+
+.presentation-text h3 {
+  font-size: 4dvh;
+  margin-bottom: 2dvh;
+}
+
+.highlight {
+  color: var(--primary-color);
+  text-shadow:
+    -1px -1px 0 var(--white),
+    1px -1px 0 var(--white),
+    -1px 1px 0 var(--white),
+    1px 1px 0 var(--white);
+}
+
+.presentation-image {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-picture {
+  width: 80%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.profile-picture:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .presentation-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .presentation-text {
+    width: 100%;
+  }
+
+  .presentation-image {
+    width: 100%;
+  }
+
+  .profile-picture {
+    width: 60%;
+  }
+}
+
+/* SECTION PARCOURS */
+.parcours-section {
+  background-color: var(--white);
+  color: black;
+  padding: 10vh 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Mosk Bold 700";
+}
+
+.title-parcours {
+  color: var(--primary-color);
+}
+
+.timeline {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  max-width: 1000px;
+  width: 100%;
+  margin-top: 5vh;
+}
+
+/* Ligne horizontale entre les points */
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-color);
+}
+
+/* Élément individuel */
+.timeline-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 22%;
+  position: relative;
+}
+
+/* Point coloré */
+.timeline-dot {
+  width: 12px;
+  height: 12px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  position: absolute;
+  top: -6px;
+}
+
+/* Contenu */
+.timeline-content {
+  padding: 15px;
+
+  transition: transform 0.3s ease;
+}
+
+.timeline-item:hover .timeline-content {
+  transform: scale(1.05);
+}
+
+.timeline-date {
+  font-weight: bold;
+  color: var(--primary-color);
+  font-size: 1.8dvh;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.timeline-content h3 {
+  font-size: 2.2dvh;
+  margin: 5px 0;
+}
+
+.timeline-content p {
+  font-size: 1.8dvh;
+  color: black;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .timeline {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timeline::before {
+    left: 10px;
+    top: 0;
+    height: 100%;
+    width: 2px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    text-align: left;
+    padding-left: 30px;
+    margin-bottom: 30px;
+  }
+
+  .timeline-dot {
+    left: 0;
+    top: 10px;
+  }
+
+  .timeline-content {
+    width: 90%;
+  }
+}

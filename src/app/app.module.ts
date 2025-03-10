@@ -7,6 +7,7 @@ import { HomeComponent } from './components/home/home.component';
 import { FireworkComponent } from './components/firework/firework.component';
 import { NavigationBarComponent } from './components/navigation-bar/navigation-bar.component';
 import { CovoitSanteComponent } from './covoit-sante/covoit-sante.component';
+import { OptivexComponent } from './optivex/optivex.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { CovoitSanteComponent } from './covoit-sante/covoit-sante.component';
     FireworkComponent,
     NavigationBarComponent,
     CovoitSanteComponent,
+    OptivexComponent,
   ],
   imports: [
     BrowserModule,
