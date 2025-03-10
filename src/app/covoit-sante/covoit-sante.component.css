@@ -1,92 +1,96 @@
-/* Styles généraux */
-body {
-  font-family: "Manrope", sans-serif;
-  background-color: var(--white);
+body,
+h1,
+h2,
+h3 {
   color: var(--primary-color);
+}
+.mission,
+.section {
+  align-items: center;
+}
+.process,
+.section {
+  padding: 80px 5%;
+  display: flex;
+}
+.context,
+.mission {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+.process,
+.process img,
+.section img {
+  border-radius: 15px;
+}
+.context,
+.context h2,
+.mission,
+.mission h1,
+.process,
+.process h2 {
+  color: var(--white);
+}
+body {
+  font-family: Manrope, sans-serif;
+  background-color: var(--white);
   margin: 0;
   padding: 0;
 }
-
+h1,
+h2,
+h3,
+p {
+  font-family: "Mosk Bold 700";
+}
 h1,
 h2,
 h3 {
   text-align: center;
-  color: var(--primary-color);
-  font-family: "Mosk Bold 700";
 }
-
 p {
   font-size: 1.2rem;
   line-height: 1.8;
   color: var(--black);
   max-width: 800px;
   margin: 20px auto;
-  font-family: "Mosk Bold 700";
 }
-
-/* Sections */
 .section {
-  padding: 80px 5%;
   width: 100dvw;
-  display: flex;
-  align-items: center;
   justify-content: space-between;
   gap: 40px;
 }
-
 .section img {
   max-width: 45%;
   height: auto;
-  border-radius: 15px;
 }
-
 .section-content {
   max-width: 50%;
 }
-
 .mission {
-  background-color: var(--primary-color);
-  color: var(--white);
   text-align: left;
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
-
 .mission h1 {
-  color: var(--white);
   font-size: 2.5rem;
-  font-weight: bold;
+  font-weight: 700;
   text-align: center;
 }
-
-.mission p {
-  color: var(--white);
-  font-size: 1.2rem;
-  text-align: justify;
-}
-
-.process {
-  background: var(--primary-color);
-  color: var(--white);
-  padding: 80px 5%;
-  border-radius: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.process img {
-  max-width: 40%;
-  border-radius: 15px;
-}
-
+.mission p,
 .process p {
   color: var(--white);
   font-size: 1.2rem;
   text-align: justify;
 }
-
+.process {
+  background: var(--primary-color);
+  align-items: center;
+  justify-content: space-between;
+}
+.process img {
+  max-width: 40%;
+}
 .context,
 .objective {
   display: flex;
@@ -94,45 +98,30 @@ p {
   align-items: center;
   gap: 40px;
 }
-
-.context {
-  background-color: var(--primary-color);
-  color: var(--white);
-}
-
 .context img,
 .objective img {
   max-width: 45%;
   border-radius: 15px;
 }
-
 .context p,
 .objective p {
   max-width: 50%;
   text-align: justify;
 }
-
-/* Responsive */
 @media (max-width: 1024px) {
   .section {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-
-  .section-content,
-  .section img {
+  .section img,
+  .section-content {
     max-width: 100%;
   }
-
+  .context,
   .mission,
-  .process,
-  .context {
+  .process {
     flex-direction: column;
     text-align: center;
   }
-}
-.context h2,
-.process h2 {
-  color: var(--white);
 }
