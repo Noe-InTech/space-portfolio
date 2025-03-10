@@ -9,6 +9,9 @@ import { NavigationBarComponent } from './components/navigation-bar/navigation-b
 import { CovoitSanteComponent } from './covoit-sante/covoit-sante.component';
 import { OptivexComponent } from './optivex/optivex.component';
 import { LilasComponent } from './lilas/lilas.component';
+import { GwadafoodComponent } from './gwadafood/gwadafood.component';
+import { InsertComponent } from './insert/insert.component';
+import { LaravelComponent } from './laravel/laravel.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +22,9 @@ import { LilasComponent } from './lilas/lilas.component';
     CovoitSanteComponent,
     OptivexComponent,
     LilasComponent,
+    GwadafoodComponent,
+    InsertComponent,
+    LaravelComponent,
   ],
   imports: [
     BrowserModule,
