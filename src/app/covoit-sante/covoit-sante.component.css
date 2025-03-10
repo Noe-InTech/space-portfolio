@@ -1,16 +1,10 @@
 /* Styles généraux */
 body {
-  font-family: "Mosk Bold 700";
+  font-family: "Manrope", sans-serif;
   background-color: var(--white);
   color: var(--primary-color);
   margin: 0;
   padding: 0;
-}
-
-.container {
-  width: 100%;
-  margin: 0 auto;
-  padding: 40px 0;
 }
 
 h1,
@@ -27,11 +21,11 @@ p {
   color: var(--black);
   max-width: 800px;
   margin: 20px auto;
+  font-family: "Mosk Bold 700";
 }
 
 /* Sections */
 .section {
-  background-color: var(--white);
   padding: 80px 5%;
   width: 100dvw;
   display: flex;
@@ -47,6 +41,7 @@ p {
 }
 
 .section-content {
+  max-width: 50%;
 }
 
 .mission {
@@ -58,12 +53,8 @@ p {
   justify-content: space-between;
 }
 
-.mission img {
-  max-width: 40%;
-  border-radius: 15px;
-}
-
 .mission h1 {
+  color: var(--white);
   font-size: 2.5rem;
   font-weight: bold;
   text-align: center;
@@ -75,36 +66,8 @@ p {
   text-align: justify;
 }
 
-.h3-container {
-  background-color: var(--contrast);
-  padding: 15px 30px;
-  border-radius: 8px;
-  text-align: center;
-  width: fit-content;
-  margin: 40px auto;
-  color: var(--white);
-  font-size: 1.4rem;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-  max-width: 800px;
-  margin: 20px auto;
-}
-
-li {
-  background-color: var(--light-gray);
-  padding: 15px;
-  margin: 10px 0;
-  border-radius: 8px;
-  font-size: 1.2rem;
-  line-height: 1.6;
-}
-
-/* Process Section */
 .process {
-  background: var(--secondary-color);
+  background: var(--primary-color);
   color: var(--white);
   padding: 80px 5%;
   border-radius: 15px;
@@ -124,13 +87,20 @@ li {
   text-align: justify;
 }
 
-/* Alternance alignements */
 .context,
 .objective {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 40px;
+}
+
+.context {
+  background-color: var(--primary-color);
+  color: var(--white);
+  h2 {
+    color: var(--white);
+  }
 }
 
 .context img,
@@ -145,11 +115,29 @@ li {
   text-align: justify;
 }
 
-/* Footer */
-.footer {
-  text-align: center;
-  padding: 20px;
-  background-color: var(--primary-color);
-  color: white;
-  font-size: 1rem;
+/* Responsive */
+@media (max-width: 1024px) {
+  .section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .section-content,
+  .section img {
+    max-width: 100%;
+  }
+
+  .mission,
+  .process,
+  .context {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.process {
+  h2 {
+    color: var(--white);
+  }
 }

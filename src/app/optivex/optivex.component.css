@@ -1,0 +1,143 @@
+/* Styles généraux */
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: var(--white);
+  color: var(--primary-color);
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  color: var(--primary-color);
+  font-family: "Mosk Bold 700";
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: var(--black);
+  max-width: 800px;
+  margin: 20px auto;
+  font-family: "Mosk Bold 700";
+}
+
+/* Sections */
+.section {
+  padding: 80px 5%;
+  width: 100dvw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.section img {
+  max-width: 45%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.section-content {
+  max-width: 50%;
+}
+
+.mission {
+  background-color: var(--primary-color);
+  color: var(--white);
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mission h1 {
+  color: var(--white);
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.mission p {
+  color: var(--white);
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+.process {
+  background: var(--primary-color);
+  color: var(--white);
+  padding: 80px 5%;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.process img {
+  max-width: 40%;
+  border-radius: 15px;
+}
+
+.process p {
+  color: var(--white);
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+.context,
+.objective {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+}
+
+.context {
+  background-color: var(--primary-color);
+  color: var(--white);
+  h2 {
+    color: var(--white);
+  }
+}
+
+.context img,
+.objective img {
+  max-width: 45%;
+  border-radius: 15px;
+}
+
+.context p,
+.objective p {
+  max-width: 50%;
+  text-align: justify;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .section-content,
+  .section img {
+    max-width: 100%;
+  }
+
+  .mission,
+  .process,
+  .context {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.process {
+  h2 {
+    color: var(--white);
+  }
+}
