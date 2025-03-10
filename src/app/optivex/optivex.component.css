@@ -98,9 +98,6 @@ p {
 .context {
   background-color: var(--primary-color);
   color: var(--white);
-  h2 {
-    color: var(--white);
-  }
 }
 
 .context img,
@@ -136,8 +133,7 @@ p {
   }
 }
 
-.process {
-  h2 {
-    color: var(--white);
-  }
+.context h2,
+.process h2 {
+  color: var(--white);
 }
