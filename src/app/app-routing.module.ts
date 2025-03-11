@@ -15,6 +15,7 @@ import { SqlComponent } from './sql/sql.component';
 import { CommunicationComponent } from './communication/communication.component';
 import { AutonomieComponent } from './autonomie/autonomie.component';
 import { AngularComponent } from './angular/angular.component';
+import { AndroidComponent } from './android/android.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -33,6 +34,7 @@ const routes: Routes = [
   { path: 'autonomie', component:AutonomieComponent},
   { path: 'angular', component:AngularComponent},
   { path: 'git', component: GitComponent },
+  { path: 'android', component: AndroidComponent },
 
 
 

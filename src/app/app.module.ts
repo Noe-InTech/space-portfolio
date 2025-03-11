@@ -21,6 +21,7 @@ import { CommunicationComponent } from './communication/communication.component'
 import { GestionDeProjetsComponent } from './gestion-de-projets/gestion-de-projets.component';
 import { AnglaisComponent } from './anglais/anglais.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { AndroidComponent } from './android/android.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { FooterComponent } from './components/footer/footer.component';
     GestionDeProjetsComponent,
     AnglaisComponent,
     FooterComponent,
+    AndroidComponent,
   ],
   imports: [
     BrowserModule,

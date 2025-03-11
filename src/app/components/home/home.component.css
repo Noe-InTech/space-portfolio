@@ -186,13 +186,9 @@ body {
   margin-bottom: 2dvh;
 }
 .highlight {
-  color: var(--primary-color);
-  text-shadow:
-    -1px -1px 0 var(--white),
-    1px -1px 0 var(--white),
-    -1px 1px 0 var(--white),
-    1px 1px 0 var(--white);
+  color: var(--white);
 }
+
 .presentation-image {
   width: 40%;
   display: flex;
