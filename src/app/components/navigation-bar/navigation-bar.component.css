@@ -43,16 +43,13 @@ nav.active {
 .line {
   height: 3px;
   width: 100%;
-  background-color: white; /* Couleur par défaut */
+  background-color: rgba(223, 21, 230, 0.8);
   transition: all 0.3s ease;
   margin: 5px 0;
 }
 
-.line.white {
-  background-color: rgba(255, 255, 255, 0.8); /* Ajustez ici si nécessaire */
-}
-
 .burger.open .line:nth-child(1) {
+  background-color: rgba(255, 255, 255, 0.8);
   transform: rotate(45deg) translateY(20px);
 }
 
@@ -61,6 +58,7 @@ nav.active {
 }
 
 .burger.open .line:nth-child(3) {
+  background-color: rgba(255, 255, 255, 0.8);
   transform: rotate(-45deg) translateY(-20px);
 }
 
@@ -132,7 +130,7 @@ nav.active {
 
 @media (max-width: 768px) {
   .line {
-    background-color: hsl(316, 30%, 36%);
+    background-color: rgba(223, 21, 230, 0.8);
   }
 
   .burger.open .line {

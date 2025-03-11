@@ -11,8 +11,6 @@ export class NavigationBarComponent {
   isDarkBackground = false;
 
   constructor(private router: Router) {
-    // Détecte la couleur de fond initiale
-    this.checkBackground();
   }
 
   toggleMenu() {
@@ -39,23 +37,4 @@ export class NavigationBarComponent {
     }
   }
 
-  @HostListener('window:scroll', [])
-  onWindowScroll() {
-    this.checkBackground();
-  }
-
-  checkBackground() {
-    const homeSection = document.getElementById('home');
-    const skillsSection = document.getElementById('skills');
-
-    const homeSectionRect = homeSection?.getBoundingClientRect();
-    const skillsSectionRect = skillsSection?.getBoundingClientRect();
-
-    // Vérifie si la section "home" est visible
-    if (homeSectionRect && homeSectionRect.bottom > 0) {
-      this.isDarkBackground = false; // Couleur claire
-    } else if (skillsSectionRect && skillsSectionRect.top < window.innerHeight) {
-      this.isDarkBackground = true; // Couleur sombre
-    }
-  }
 }
