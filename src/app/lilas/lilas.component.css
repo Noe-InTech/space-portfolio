@@ -60,7 +60,7 @@ p {
   margin: 20px auto;
 }
 .section {
-  width: 100dvw;
+  width: 100%;
   justify-content: space-between;
   gap: 40px;
 }
@@ -133,4 +133,62 @@ p {
 ul {
   font-family: "Mosk Bold 700";
   padding-left: 2dvw;
+}
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.skill-card {
+  background-color: var(--white);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 250px;
+  color: var(--primary-color);
+  font-family: "Mosk Bold 700";
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 280px;
+}
+
+.skill-card h3 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.skill-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: auto;
+}
+
+.btn:hover {
+  background-color: var(--secondary-color);
+}
+
+.section-content-skills {
+  width: 100%;
+  text-align: center;
+}
+
+.skill-title {
+  margin-bottom: 2dvh;
 }

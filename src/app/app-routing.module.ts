@@ -7,6 +7,14 @@ import { LilasComponent } from './lilas/lilas.component';
 import { GwadafoodComponent } from './gwadafood/gwadafood.component';
 import { InsertComponent } from './insert/insert.component';
 import { LaravelComponent } from './laravel/laravel.component';
+import { GitComponent } from './git/git.component';
+import { GestionDeProjetsComponent } from './gestion-de-projets/gestion-de-projets.component';
+import { AnglaisComponent } from './anglais/anglais.component';
+import { JavaComponent } from './java/java.component';
+import { SqlComponent } from './sql/sql.component';
+import { CommunicationComponent } from './communication/communication.component';
+import { AutonomieComponent } from './autonomie/autonomie.component';
+import { AngularComponent } from './angular/angular.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -17,6 +25,15 @@ const routes: Routes = [
   { path: 'gwadafood', component: GwadafoodComponent },
   { path: 'insert', component: InsertComponent },
   { path: 'laravel', component: LaravelComponent },
+  { path: 'gestion-de-projets', component:GestionDeProjetsComponent},
+  { path: 'anglais', component:AnglaisComponent},
+  { path: 'java', component:JavaComponent},
+  { path: 'sql', component:SqlComponent},
+  { path: 'communication', component:CommunicationComponent},
+  { path: 'autonomie', component:AutonomieComponent},
+  { path: 'angular', component:AngularComponent},
+  { path: 'git', component: GitComponent },
+
 
 
 

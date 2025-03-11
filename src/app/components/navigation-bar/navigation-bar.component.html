@@ -10,13 +10,14 @@
       <div class="menu-container">
         <h1 class="menu-title">Noé Moussa</h1>
         <a class="menu-link" (click)="scrollTo('home'); closeMenu()">Accueil</a>
+
         <a class="menu-link" (click)="scrollTo('skills'); closeMenu()"
           >Compétences</a
         >
         <a class="menu-link" (click)="scrollTo('projects'); closeMenu()"
           >Projets</a
         >
-        <a class="menu-link" routerLink="/contact" (click)="closeMenu()"
+        <a class="menu-link" (click)="scrollTo('contact'); closeMenu()"
           >Contact</a
         >
       </div>

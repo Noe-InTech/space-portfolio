@@ -298,7 +298,7 @@ body {
     font-size: 4dvh;
   }
   .skill-container {
-    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: repeat(2, 1fr); */
   }
   .presentation-container {
     flex-direction: column;
@@ -329,5 +329,123 @@ body {
   }
   .timeline-content {
     width: 90%;
+  }
+}
+
+a img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+#linked-skills {
+  background-color: var(--white);
+}
+#linked-skills h2 {
+  color: var(--primary-color);
+}
+
+.skill-card {
+  background-color: var(--primary-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 250px;
+  color: var(--white);
+  font-family: "Mosk Bold 700";
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 280px;
+}
+
+.skill-card h3 {
+  color: var(--white);
+  margin-bottom: 10px;
+}
+
+.skill-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: var(--white);
+  color: var(--primary-color);
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: auto;
+}
+
+.btn:hover {
+  background-color: var(--secondary-color);
+}
+
+.section-content-skills {
+  width: 100%;
+  text-align: center;
+}
+
+.skill-title {
+  margin-bottom: 2dvh;
+}
+.contact-section {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 10vh 5vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-text {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  font-family: "Mosk Bold 700";
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.contact-email {
+  font-size: 1.8rem;
+  font-family: "Mosk Bold 700";
+  color: var(--white);
+  text-decoration: none;
+  background-color: var(--contrast);
+  padding: 12px 25px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-top: 20px;
+  transition: background 0.3s ease-in-out;
+}
+
+.contact-email:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-text {
+    font-size: 1.3rem;
+  }
+
+  .contact-email {
+    font-size: 1.5rem;
+    padding: 10px 20px;
   }
 }
