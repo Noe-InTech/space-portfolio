@@ -1,3 +1,7 @@
-<app-navigation-bar> </app-navigation-bar>
-<router-outlet> </router-outlet>
-<app-footer> </app-footer>
+<app-navigation-bar></app-navigation-bar>
+<router-outlet></router-outlet>
+<app-footer></app-footer>
+
+<button class="scroll-to-top" (click)="scrollToTop()" *ngIf="showScrollButton">
+  <span class="arrow-up"></span>
+</button>

@@ -1,6 +1,64 @@
-*, html, body {
+*,
+html,
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
 
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px; /* Rond parfait */
+  height: 50px;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition:
+    opacity 0.3s ease-in-out,
+    transform 0.3s;
+}
+
+.scroll-to-top:hover {
+  background-color: var(--secondary-color);
+  transform: scale(1.1);
+}
+
+.scroll-to-top:active {
+  transform: scale(1);
+}
+
+/* Création de la flèche en CSS */
+.arrow-up {
+  position: relative;
+  display: block;
+  width: 12px;
+  height: 12px;
+}
+
+.arrow-up::before,
+.arrow-up::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 12px;
+  background-color: white;
+}
+
+.arrow-up::before {
+  transform: rotate(45deg);
+  left: 1px;
+  top: 0;
+}
+
+.arrow-up::after {
+  transform: rotate(-45deg);
+  right: 1px;
+  top: 0;
 }

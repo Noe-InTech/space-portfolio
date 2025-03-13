@@ -125,11 +125,10 @@ p {
   .context,
   .mission,
   .process {
-    flex-direction: column;
+    flex-direction: column-reverse;
     text-align: center;
   }
 }
-
 .skills-container {
   display: flex;
   justify-content: center;
