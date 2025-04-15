@@ -445,3 +445,85 @@ a img {
     padding: 10px 20px;
   }
 }
+.toggle-details {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  padding: 8px 12px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-family: "Mosk Bold 700";
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-size: 1.6dvh;
+}
+
+.toggle-details:hover {
+  background-color: var(--secondary-color);
+}
+
+.details-content {
+  background-color: rgba(0, 0, 0, 0.03); /* fond très léger */
+  border-left: 4px solid var(--primary-color);
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-top: 10px;
+  font-size: 1.7dvh;
+  color: #333;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.timeline-content.active .details-content {
+  max-height: 1000px;
+  opacity: 1;
+}
+
+.details-content p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.details-content ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.details-content ul li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 8px;
+}
+
+.details-content ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  font-size: 1.5em;
+  line-height: 1;
+}
+.btn-link {
+  display: inline-block;
+  padding: 10px 18px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  text-decoration: none;
+  border: none;
+  border-radius: 6px;
+  font-family: "Mosk Bold 700";
+  font-size: 1.7dvh;
+  margin-top: 12px;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-link:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}

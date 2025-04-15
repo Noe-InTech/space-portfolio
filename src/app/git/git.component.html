@@ -2,14 +2,11 @@
   <div class="section-content mission-content">
     <h1>Git</h1>
     <p>
-      Git est un outil indispensable dans le développement logiciel, permettant
-      un suivi précis des modifications, une gestion efficace des versions et
-      une collaboration fluide au sein des équipes. Il facilite le travail en
-      groupe en assurant la traçabilité des modifications et en offrant des
-      mécanismes puissants pour résoudre les conflits de code. Son adoption
-      généralisée dans l’industrie en fait un incontournable pour tout
-      développeur souhaitant travailler sur des projets d’envergure, qu’ils
-      soient open source ou professionnels.
+      Git est un outil incontournable pour tout développeur souhaitant travailler sur des projets collaboratifs ou
+      structurés. Il permet de suivre précisément l’évolution du code, de collaborer efficacement à plusieurs sur une
+      même base de code, et de garantir une traçabilité fiable dans les projets. J’ai découvert Git très tôt, dès mes
+      premiers projets personnels, et j’ai rapidement compris qu’il allait devenir une pièce maîtresse de mon
+      environnement de développement.
     </p>
   </div>
   <img src="assets/images/gitWhite.png" alt="Illustration mission" />
@@ -19,26 +16,17 @@
   <img src="assets/images/4380747.jpg" alt="Illustration rôle" />
   <div class="section-content">
     <p>
-      J’ai commencé à utiliser Git dès mes premiers projets personnels, ce qui
-      m’a permis de comprendre les fondamentaux de la gestion de version :
-      commits, branches, merges et rebases. Avec le temps, j’ai intégré des
-      workflows plus avancés, notamment dans les projets Covoit’Santé et
-      Optivex, où j’ai dû collaborer avec d’autres développeurs et organiser
-      efficacement le code source. L’utilisation de plateformes comme GitHub et
-      GitLab m’a familiarisé avec les pratiques professionnelles, notamment les
-      pull requests, les revues de code et l’intégration continue.
+      En expérimentant les commandes de base (commit, push, pull, merge, rebase), j’ai appris à garder un historique
+      clair et à éviter les conflits. C’est dans le cadre du projet <strong>Covoit’Santé</strong> que j’ai utilisé Git
+      de façon professionnelle pour la première fois, en suivant une approche Git Flow : branche principale stable,
+      branches de fonctionnalités et de corrections, revues de code, déploiement automatisé via GitLab CI/CD. J’ai aussi
+      géré des pull requests et participé activement aux décisions d’intégration.
     </p>
     <p>
-      Dans le cadre de Covoit’Santé, j’ai travaillé avec GitLab et mis en place
-      une gestion rigoureuse des branches en suivant une approche Git Flow : une
-      branche principale stable, des branches de développement et des branches
-      spécifiques pour chaque fonctionnalité ou correctif. L’intégration de
-      pipelines CI/CD a permis d’automatiser le déploiement et les tests,
-      garantissant ainsi une mise en production rapide et fiable. Sur Optivex,
-      l’accent a été mis sur la gestion des versions et la maintenance à long
-      terme. J’ai appris à utiliser des tags pour marquer les versions stables
-      et j’ai exploité des outils avancés comme Git bisect pour identifier et
-      corriger efficacement les bugs.
+      Sur le projet <strong>Optivex</strong>, j’ai approfondi mes compétences en gestion de version : tagging pour les
+      livraisons, utilisation de Git bisect pour identifier l’origine de bugs, et structuration de l’historique pour
+      assurer une maintenance sur le long terme. L’intégration des hooks Git m’a permis d’automatiser des vérifications
+      de formatage de code avant chaque commit, améliorant ainsi la qualité du projet.
     </p>
   </div>
 </section>
@@ -46,24 +34,36 @@
 <section class="section context" id="context">
   <div class="section-content">
     <p>
-      La gestion des conflits est un aspect crucial de l’utilisation de Git,
-      notamment lorsqu’on travaille en équipe sur des fichiers communs. J’ai
-      développé des réflexes solides pour gérer ces conflits efficacement, en
-      utilisant git rebase et git merge de manière appropriée, et en appliquant
-      des bonnes pratiques pour garder un historique propre et compréhensible.
-      L’utilisation de hooks Git, notamment pour le formatage du code et la
-      vérification des commits, a également permis d’améliorer la qualité du
-      projet et d’automatiser certaines tâches répétitives.
+      Travailler avec Git m’a également permis d’améliorer ma gestion des conflits. J’ai appris à utiliser git rebase
+      dans les bonnes situations, à réécrire l’historique proprement avec git commit --amend ou git reset, et à éviter
+      les mauvaises pratiques qui mènent à des branches difficiles à maintenir. Ces réflexes sont devenus des
+      automatismes que je partage souvent avec mes camarades ou collègues moins expérimentés.
     </p>
     <p>
-      Aujourd’hui, Git est une part essentielle de mon workflow de
-      développement. Je continue à explorer des pratiques avancées telles que
-      GitOps, qui intègre Git à la gestion des infrastructures, et l’utilisation
-      de submodules pour gérer des dépendances complexes. Mon objectif est
-      d’optimiser encore davantage mes workflows en m’appuyant sur les dernières
-      évolutions des outils de gestion de versions et en intégrant des
-      stratégies avancées d’automatisation et de sécurité pour assurer des
-      livraisons toujours plus fiables et efficaces.
+      Aujourd’hui, Git fait partie intégrante de mon workflow. Je l’utilise quotidiennement, que ce soit pour des
+      projets personnels ou en équipe. Je suis à l’aise avec la majorité des commandes avancées, ainsi qu’avec
+      l’utilisation de plateformes comme GitHub, GitLab ou Bitbucket. Je maîtrise également les pipelines CI/CD pour
+      déclencher des tests ou déploiements à chaque push.
+    </p>
+    <p>
+      Je considère avoir un bon niveau en Git, que j’ai acquis principalement par la pratique, en résolvant de vrais
+      problèmes dans de vrais projets. Cela m’a permis d’aller au-delà de l’usage basique et de réellement comprendre ce
+      qui se passe “sous le capot” du versionning.
+    </p>
+    <p>
+      Je continue d’approfondir certains aspects : GitOps pour la gestion d’infrastructure par Git, les submodules pour
+      gérer des dépôts imbriqués, ou encore la gestion fine des permissions dans des dépôts partagés. J’explore aussi
+      les stratégies de release avancées, comme les monorepos ou les flux trunk-based.
+    </p>
+    <p>
+      Avec le recul, je dirais qu’il est essentiel de comprendre que Git n’est pas seulement un outil de sauvegarde,
+      mais une véritable base de communication pour une équipe. Bien utiliser Git, c’est écrire un historique lisible,
+      compréhensible, et savoir comment isoler les modifications pour mieux collaborer.
+    </p>
+    <p>
+      Je souhaite renforcer ma maîtrise de Git en environnement professionnel avec des outils comme GitHub Actions,
+      GitLab Runner, ou Bitbucket Pipelines. Je me forme actuellement sur ces outils et les bonnes pratiques
+      d'automatisation et de sécurisation des dépôts dans un contexte DevOps.
     </p>
   </div>
   <img src="assets/images/projects/context.png" alt="Illustration contexte" />
@@ -75,43 +75,27 @@
     <div class="skills-container">
       <div class="skill-card">
         <h3>Lilas</h3>
-        <img
-          src="assets/images/projects/lilas-logo.png"
-          alt="Illustration projet Lilas"
-        />
+        <img src="assets/images/projects/lilas-logo.png" alt="Illustration projet Lilas" />
         <a routerLink="/lilas" class="btn">Voir le projet</a>
       </div>
       <div class="skill-card">
         <h3>Covoit'Santé</h3>
-        <img
-          src="assets/images/projects/covoit-sante.svg"
-          alt="Illustration projet Covoit'Santé"
-        />
+        <img src="assets/images/projects/covoit-sante.svg" alt="Illustration projet Covoit'Santé" />
         <a routerLink="/covoit-sante" class="btn">Voir le projet</a>
       </div>
       <div class="skill-card">
         <h3>Gwadafood</h3>
-        <img
-          src="assets/images/projects/gwadafood.png"
-          alt="Illustration projet Gwadafood"
-        />
+        <img src="assets/images/projects/gwadafood.png" alt="Illustration projet Gwadafood" />
         <a routerLink="/gwadafood" class="btn">Voir le projet</a>
       </div>
       <div class="skill-card">
         <h3>Optivex</h3>
-        <img
-          src="assets/images/projects/optivex.jpg"
-          alt="Illustration projet optivex"
-        />
+        <img src="assets/images/projects/optivex.jpg" alt="Illustration projet optivex" />
         <a routerLink="/optivex" class="btn">Voir le projet</a>
       </div>
-
       <div class="skill-card">
         <h3>Insert</h3>
-        <img
-          src="assets/images/projects/insert.png"
-          alt="Illustration projet insert"
-        />
+        <img src="assets/images/projects/insert.png" alt="Illustration projet insert" />
         <a routerLink="/insert" class="btn">Voir le projet</a>
       </div>
     </div>

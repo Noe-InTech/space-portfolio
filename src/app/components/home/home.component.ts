@@ -1,14 +1,28 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component } from '@angular/core';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent {
+export class HomeComponent implements AfterViewInit {
   showFirework = false;
   fireworkTimeout: any;
   isHovered = false;
+  ngAfterViewInit(): void {
+    const buttons = document.querySelectorAll('.toggle-details');
+    buttons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const parent = btn.parentElement;
+        const content = btn.nextElementSibling as HTMLElement;
+        const isVisible = content.style.display === 'block';
+
+        content.style.display = isVisible ? 'none' : 'block';
+        parent?.classList.toggle('active');
+        btn.textContent = isVisible ? 'Afficher les détails' : 'Masquer les détails';
+      });
+    });
+  }
 
   onMouseEnter() {
     if (!this.showFirework) {
