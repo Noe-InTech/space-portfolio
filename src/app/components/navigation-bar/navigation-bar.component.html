@@ -1,26 +1,57 @@
-<nav [class.active]="isMenuOpen">
-  <div class="burger" (click)="toggleMenu()" [class.open]="isMenuOpen">
-    <div [class.white]="isDarkBackground" class="line"></div>
-    <div [class.white]="isDarkBackground" class="line"></div>
-    <div [class.white]="isDarkBackground" class="line"></div>
-  </div>
-  <div class="menu" [class.open]="isMenuOpen">
-    <div class="menu-container">
-      <h1 class="menu-title">Noé Moussa</h1>
-      <div class="menu-container">
-        <h1 class="menu-title">Noé Moussa</h1>
-        <a class="menu-link" (click)="scrollTo('home'); closeMenu()">Accueil</a>
+<nav class="topnav" id="myTopnav">
+  <a class="menu-link" (click)="scrollTo('home'); closeMenu()">Accueil</a>
 
-        <a class="menu-link" (click)="scrollTo('skills'); closeMenu()"
-          >Compétences</a
-        >
-        <a class="menu-link" (click)="scrollTo('projects'); closeMenu()"
-          >Projets</a
-        >
-        <a class="menu-link" (click)="scrollTo('contact'); closeMenu()"
-          >Contact</a
-        >
-      </div>
+  <a class="menu-link" (click)="scrollTo('contact'); closeMenu()">Contact</a>
+
+  <div class="dropdown">
+    <button class="dropbtn">Projets
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a routerLink="/covoit-sante">Covoit'Santé</a>
+      <a routerLink="/optivex">Optivex</a>
+      <a routerLink="/lilas">Lilas</a>
+      <a routerLink="/gwadafood">Gwadafood</a>
+      <a routerLink="/insert">Insert</a>
     </div>
   </div>
+
+  <div class="dropdown">
+    <button class="dropbtn">Compétences transverses
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a routerLink="/gestion-de-projets">Gestion de projets</a>
+      <a routerLink="/communication">Communication</a>
+      <a routerLink="/autonomie">Autonomie</a>
+      <a routerLink="/anglais">Anglais</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <button class="dropbtn">Compétences techniques
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a routerLink="/laravel">Laravel</a>
+      <a routerLink="/angular">Angular</a>
+      <a routerLink="/java">Java</a>
+      <a routerLink="/sql">SQL</a>
+      <a routerLink="/android">Android</a>
+      <a routerLink="/git">Git</a>
+    </div>
+  </div>
+
+  <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">&#9776;</a>
 </nav>
+
+<script>
+  function toggleNavbar() {
+    const x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+</script>

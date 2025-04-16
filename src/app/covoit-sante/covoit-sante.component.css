@@ -129,6 +129,11 @@ p {
     text-align: center;
   }
 }
+
+ul {
+  font-family: "Mosk Bold 700";
+  padding-left: 2dvw;
+}
 .skills-container {
   display: flex;
   justify-content: center;
@@ -136,21 +141,15 @@ p {
   width: 100%;
   flex-wrap: wrap;
 }
-#linked-skills {
-  background-color: var(--white);
-}
-#linked-skills h2 {
-  color: var(--primary-color);
-}
 
 .skill-card {
-  background-color: var(--primary-color);
+  background-color: var(--white);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   width: 250px;
-  color: var(--white);
+  color: var(--primary-color);
   font-family: "Mosk Bold 700";
   display: flex;
   flex-direction: column;
@@ -160,7 +159,7 @@ p {
 }
 
 .skill-card h3 {
-  color: var(--white);
+  color: var(--primary-color);
   margin-bottom: 10px;
 }
 
@@ -174,8 +173,8 @@ p {
 .btn {
   display: inline-block;
   padding: 10px 15px;
-  background-color: var(--white);
-  color: var(--primary-color);
+  background-color: var(--primary-color);
+  color: var(--white);
   text-decoration: none;
   border-radius: 5px;
   margin-top: auto;

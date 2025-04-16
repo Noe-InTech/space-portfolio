@@ -2,25 +2,13 @@
   <div class="section-content mission-content">
     <h1>Insert</h1>
     <p>
-      Dans le cadre d’un projet en collaboration avec la Mission Locale du Pays
-      du Villeneuvois, j’ai participé au développement d’Insert, une plateforme
-      numérique ayant pour objectif de référencer et gérer tous les partenaires
-      de l’organisme.
-    </p>
-
-    <p>
-      L’enjeu principal de cette plateforme était d’offrir une visibilité
-      globale sur les différents partenaires, de leur permettre de gérer leurs
-      propres événements, et de centraliser toutes ces informations dans un
-      calendrier et une carte interactive.
+      Durant un projet académique en partenariat avec la Mission Locale du Pays du Villeneuvois, j’ai conçu une application web nommée Insert, visant à centraliser la gestion des partenaires de la structure et à dynamiser la planification des événements locaux. Ce projet s’inscrit dans une démarche de valorisation du tissu associatif et institutionnel du territoire.
     </p>
     <p>
-      Chaque partenaire pouvait se connecter à la plateforme, organiser des
-      événements, et les publier afin qu’ils apparaissent automatiquement dans
-      un calendrier partagé et sur une carte interactive utilisant Leaflet. Ce
-      projet visait à faciliter la communication et la coordination entre les
-      différents acteurs impliqués, tout en assurant une meilleure organisation
-      des événements et initiatives locales.
+      Le projet comportait plusieurs défis techniques : mettre en place une authentification avec rôles personnalisés, synchroniser un agenda partagé entre partenaires, et intégrer une carte interactive avec Leaflet. L’objectif était d’offrir aux utilisateurs une interface ergonomique et fluide, permettant de gérer les événements en toute autonomie.
+    </p>
+    <p>
+      En tant que développeur full-stack, j’ai pris en charge la totalité de la partie front-end sous Angular et la création d’une API REST en Java. J’ai particulièrement travaillé l’intégration cartographique, le responsive design, et la gestion sécurisée des permissions côté serveur.
     </p>
   </div>
   <img src="assets/images/projects/insert.png" alt="Illustration mission" />
@@ -29,158 +17,70 @@
 <section class="section role">
   <img src="assets/images/projects/role.png" alt="Illustration rôle" />
   <div class="section-content">
-    <h2>👨‍💻 Mon rôle dans le projet</h2>
+    <h2>Mon rôle dans le projet</h2>
     <p>
-      En tant que développeur full-stack, j’ai contribué activement au
-      développement de Insert, en travaillant sur l’interface utilisateur avec
-      Angular et sur l’API en Java qui permettait la gestion des données.
+      J’ai assuré la conception et le développement de l’application de bout en bout. Sur la partie front, j’ai créé une interface dynamique en Angular avec des composants modulaires, un tableau de bord personnalisé, et une carte interactive gérée avec Leaflet et les événements géolocalisés.
     </p>
     <p>
-      Dans un premier temps, j’ai conçu et développé le front-end avec Angular,
-      en mettant en place une interface moderne, dynamique et intuitive.
-      L’objectif était d’assurer une expérience fluide pour les partenaires,
-      leur permettant d’ajouter facilement des événements, de consulter ceux des
-      autres, et d’interagir avec la carte interactive.
-    </p>
-    <p>
-      J’ai également participé au développement de l’API REST en Java, qui
-      assurait la gestion des utilisateurs, des partenaires et des événements.
-      Cette API était responsable du stockage et de la récupération des données,
-      garantissant un système sécurisé et performant pour gérer les informations
-      des partenaires et des événements.
-    </p>
-    <p>
-      Un des défis majeurs de ce projet a été l’intégration de Leaflet, une
-      bibliothèque JavaScript permettant d’afficher une carte interactive où
-      chaque événement était géolocalisé. J’ai travaillé sur la mise en place de
-      points interactifs permettant aux utilisateurs de visualiser rapidement où
-      et quand chaque événement se déroulait.
+      Côté back-end, j’ai conçu l’API REST en Java, en utilisant Spring Boot, avec une base de données relationnelle SQL. J’ai mis en place un système de rôles différenciés pour les partenaires, ainsi qu’un système de filtrage efficace pour les événements dans le calendrier. J’ai également veillé à la sécurité des endpoints grâce à JWT et à la validation systématique des requêtes.
     </p>
   </div>
 </section>
 
-<section class="section context" id="context">
+<section class="section context">
   <div class="section-content">
-    <h2>🏢 Contexte et client</h2>
+    <h2>Contexte et client</h2>
     <p>
-      La Mission Locale du Pays du Villeneuvois accompagne les jeunes dans leur
-      insertion professionnelle et sociale, en collaborant avec de nombreux
-      partenaires locaux (entreprises, associations, institutions).
+      Ce projet a été développé en réponse à une problématique de terrain rencontrée par la Mission Locale, qui avait besoin de mieux organiser ses actions et de fluidifier la communication avec ses partenaires. Le tout devait fonctionner dans un environnement sécurisé, accessible sans formation technique.
     </p>
     <p>
-      Avant la mise en place de Insert, il était difficile d’avoir une vue
-      d’ensemble des partenaires et des événements organisés, ce qui limitait la
-      coordination entre les différents acteurs. Le projet a donc été conçu pour
-      répondre à ce besoin, en proposant une plateforme centralisée où chaque
-      partenaire pouvait gérer ses propres informations et événements en toute
-      autonomie.
+      J’ai mené le projet avec une grande autonomie, en lien direct avec les parties prenantes. Cela m’a permis de mieux comprendre les besoins utilisateurs et d’y répondre avec des choix techniques adaptés.
     </p>
   </div>
   <img src="assets/images/projects/context.png" alt="Illustration contexte" />
 </section>
 
 <section class="section objective">
-  <img
-    src="assets/images/projects/objective.jpg"
-    alt="Illustration objectifs"
-  />
+  <img src="assets/images/projects/objective.jpg" alt="Illustration objectifs" />
   <div class="section-content">
-    <h2>🎯 Objectifs, défis et enjeux</h2>
+    <h2>Objectifs, défis et enjeux</h2>
     <p>
-      L’objectif principal de Insert était de fournir une solution numérique
-      efficace pour améliorer la gestion et la visibilité des partenaires et des
-      événements locaux.
+      Le principal enjeu était de proposer une plateforme simple à prendre en main tout en intégrant des fonctionnalités puissantes : gestion d’utilisateurs, création d’événements géolocalisés, affichage en carte et en calendrier dynamique, et filtres avancés. L’ergonomie a été pensée pour répondre aux utilisateurs non techniques.
     </p>
     <p>
-      L’un des principaux défis du projet était de concevoir une plateforme
-      simple et intuitive, permettant aux partenaires de gérer facilement leurs
-      événements et d’interagir avec le calendrier et la carte interactive.
-    </p>
-    <p>
-      Un autre enjeu était la gestion des accès et des rôles utilisateurs.
-      Certains partenaires avaient des droits spécifiques, comme la création
-      d’événements ou la gestion des informations sur leurs structures. Il a
-      donc fallu implémenter un système d’authentification sécurisé, avec des
-      permissions adaptées à chaque type d’utilisateur.
-    </p>
-    <p>
-      Enfin, l’intégration de Leaflet pour la carte interactive a représenté un
-      défi technique important. Il était nécessaire de permettre aux
-      utilisateurs de localiser leurs événements avec précision, tout en
-      optimisant l’affichage pour éviter les lenteurs et garantir une expérience
-      fluide.
+      J’ai également dû résoudre des problèmes de performance liés à l’affichage des événements sur carte et à la synchronisation avec le calendrier. L’implémentation d’une pagination serveur et la gestion des données par requêtes optimisées en SQL ont permis de maintenir la fluidité.
     </p>
   </div>
 </section>
 
 <section class="section process">
   <div class="section-content">
-    <h2>⚙️ Processus de développement</h2>
+    <h2>Processus de développement</h2>
     <p>
-      Le développement de Insert a suivi un processus structuré, débutant par
-      une phase d’analyse des besoins en collaboration avec la Mission Locale.
-      Cette étape a permis d’identifier les fonctionnalités essentielles et de
-      préciser les attentes des partenaires afin de garantir une solution
-      adaptée à leurs usages.
+      Après une phase de cadrage fonctionnel avec les parties prenantes, j’ai défini l’architecture technique en m’appuyant sur Angular côté client et Spring Boot côté serveur. Le découpage du projet en modules m’a permis de progresser itérativement.
     </p>
     <p>
-      Une fois les exigences définies, la conception de l’architecture du projet
-      s’est orientée vers une structure combinant un front-end développé avec
-      Angular et une API en Java. Cette approche a assuré une séparation claire
-      des responsabilités et une meilleure évolutivité de la plateforme.
+      La carte a été intégrée avec Leaflet en combinant données dynamiques, interactions personnalisées (infobulles, filtres), et géocodage manuel pour les partenaires. Le calendrier a été conçu comme un module Angular réutilisable, optimisé pour les performances.
     </p>
     <p>
-      Le développement de l’interface utilisateur s’est concentré sur
-      l’expérience utilisateur, avec la mise en place d’un système
-      d’authentification sécurisé, un tableau de bord permettant la gestion des
-      événements, et une carte interactive intégrée grâce à Leaflet.
-      L’interactivité et la clarté de la navigation ont été des priorités tout
-      au long du processus.
-    </p>
-    <p>
-      Parallèlement, l’API REST a été développée en Java afin d’assurer la
-      gestion efficace des partenaires, des événements et la communication
-      fluide entre le front-end et la base de données. Une attention
-      particulière a été portée à la mise en place d’un calendrier dynamique,
-      permettant d’afficher les événements en temps réel avec diverses options
-      de filtrage et de tri pour une navigation simplifiée.
-    </p>
-    <p>
-      Enfin, une phase de tests rigoureuse a été menée pour garantir la
-      stabilité et la fluidité de la plateforme. Des ajustements ont été
-      effectués en fonction des retours utilisateurs, permettant d’affiner
-      l’expérience et d’optimiser les performances avant le déploiement final.
+      Le projet a été versionné avec Git et suivi sur Trello, avec des livraisons fréquentes et des retours utilisateurs intégrés à chaque sprint. Les tests unitaires ont couvert les services critiques de l’API.
     </p>
   </div>
   <img src="assets/images/projects/process.png" alt="Illustration processus" />
 </section>
 
 <section class="section conclusion">
-  <img
-    src="assets/images/projects/conclusion.jpg"
-    alt="Illustration conclusion"
-  />
+  <img src="assets/images/projects/conclusion.jpg" alt="Illustration conclusion" />
   <div class="section-content">
-    <h2>🏁 Conclusion et apprentissages</h2>
+    <h2>Conclusion et apprentissages</h2>
     <p>
-      Le développement de Insert a été une expérience très enrichissante, me
-      permettant de travailler sur un projet complet et concret, impliquant à la
-      fois du développement front-end et back-end.
+      Ce projet m’a permis de monter rapidement en compétence sur la création de plateformes full-stack modernes. Il m’a aussi permis de structurer mon travail autour de besoins concrets utilisateurs, tout en maîtrisant l’intégration d’outils tiers (Leaflet, calendrier dynamique, filtres avancés).
     </p>
     <p>
-      Grâce à ce projet, j’ai renforcé mes compétences en Angular, notamment sur
-      la gestion des interfaces dynamiques et interactives, ainsi qu’en Java,
-      avec le développement d’une API robuste et sécurisée.
+      Je considère aujourd’hui ma compétence sur Angular comme avancée, et sur Java comme solide. Ce projet m’a aussi appris à concevoir des interfaces accessibles, à structurer une API REST propre, et à travailler de façon agile avec des retours utilisateurs continus.
     </p>
     <p>
-      J’ai également appris à intégrer Leaflet dans une application Angular, en
-      optimisant l’affichage des points géolocalisés pour assurer une expérience
-      utilisateur fluide et performante.
-    </p>
-    <p>
-      En travaillant avec la Mission Locale, j’ai pu mieux comprendre les
-      besoins d’un organisme public et l’importance de concevoir des outils
-      numériques adaptés aux réalités du terrain.
+      À moyen terme, je souhaite continuer à développer des interfaces interactives en Angular, approfondir Spring Boot, et explorer des systèmes de gestion de rôles plus complexes. J’ai également pour projet d’automatiser davantage mes pipelines CI/CD pour faciliter les déploiements.
     </p>
   </div>
 </section>
@@ -191,10 +91,7 @@
     <div class="skills-container">
       <div class="skill-card">
         <h3>Gestion de projets</h3>
-        <img
-          src="assets/images/proGestionViolet.png"
-          alt="Illustration compétence"
-        />
+        <img src="assets/images/proGestionViolet.png" alt="Illustration compétence" />
         <a routerLink="/gestion-de-projets" class="btn">Voir la compétence</a>
       </div>
       <div class="skill-card">
@@ -209,18 +106,12 @@
       </div>
       <div class="skill-card">
         <h3>Communication</h3>
-        <img
-          src="assets/images/communicationViolet.png"
-          alt="Illustration compétence"
-        />
+        <img src="assets/images/communicationViolet.png" alt="Illustration compétence" />
         <a routerLink="/communication" class="btn">Voir la compétence</a>
       </div>
       <div class="skill-card">
         <h3>Angular</h3>
-        <img
-          src="assets/images/angularViolet.png"
-          alt="Illustration compétence"
-        />
+        <img src="assets/images/angularViolet.png" alt="Illustration compétence" />
         <a routerLink="/angular" class="btn">Voir la compétence</a>
       </div>
     </div>

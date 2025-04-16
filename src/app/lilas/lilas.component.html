@@ -2,31 +2,13 @@
   <div class="section-content mission-content">
     <h1>Lilas</h1>
     <p>
-      Dans le cadre de mon alternance à l’École nationale d’administration
-      pénitentiaire (ENAP), j’ai développé Lilas, une application web conçue
-      pour le service technique du campus. Cette solution a été mise en place
-      afin de centraliser la gestion des anomalies techniques, en permettant aux
-      agents de signaler des dysfonctionnements, d’assurer un suivi détaillé des
-      interventions et d’optimiser la réactivité des équipes de maintenance.
-    </p>
-
-    <p>
-      Avant la mise en place de Lilas, la gestion des incidents techniques était
-      principalement réalisée de manière fragmentée, via des échanges informels
-      ou des suivis papier, ce qui entraînait des pertes d’informations et un
-      manque de visibilité sur l’état des interventions en cours. Grâce à cette
-      application, l’ensemble du processus a été structuré et automatisé,
-      facilitant le suivi des anomalies signalées et l’amélioration des délais
-      de résolution.
+      Dans le cadre de mon alternance à l’École nationale d’administration pénitentiaire (ENAP), j’ai été chargé de développer une application web complète : Lilas. Cette application a été spécifiquement conçue pour répondre aux besoins du service technique du campus. L’objectif principal était de centraliser la gestion des anomalies techniques signalées par les différents usagers du campus, et d’optimiser leur prise en charge par les équipes de maintenance.
     </p>
     <p>
-      L’une des particularités de Lilas est sa modularité. En plus de permettre
-      l’ajout et le suivi des anomalies, l’application offre la possibilité de
-      créer, modifier et supprimer des types d’anomalies, des lieux
-      d’intervention ainsi que des secteurs spécifiques. Cette flexibilité
-      permet d’adapter l’outil aux évolutions des infrastructures du campus et
-      d’assurer un suivi précis des interventions en fonction des zones
-      concernées.
+      Avant la mise en œuvre de Lilas, les anomalies étaient signalées de manière informelle : échanges verbaux, e-mails dispersés, notes papier, etc. Ce fonctionnement entraînait des oublis, des doublons ou une absence de suivi. Grâce à Lilas, chaque signalement est désormais tracé, catégorisé, daté, et traité de façon structurée. L’historique des interventions est conservé et consultable, ce qui améliore la communication, la réactivité, et la planification des opérations de maintenance.
+    </p>
+    <p>
+      L’application ne se limite pas à la déclaration d’anomalies : elle intègre aussi des fonctionnalités de gestion des types de pannes, des lieux d’intervention (salles, bâtiments, extérieurs), et des secteurs géographiques du campus. Cette modularité permet aux administrateurs d’adapter l’outil aux évolutions constantes du site, sans intervention technique.
     </p>
   </div>
   <img src="assets/images/projects/lilas-logo.png" alt="Illustration mission" />
@@ -37,103 +19,42 @@
   <div class="section-content">
     <h2>👨‍💻 Mon rôle dans le projet</h2>
     <p>
-      En tant que développeur full-stack, j’ai assuré l’ensemble du
-      développement de Lilas, en m’appuyant sur Laravel pour concevoir une
-      application modulaire, robuste et évolutive. Dans un premier temps, j’ai
-      développé un système de gestion des anomalies permettant aux techniciens
-      de signaler un problème en quelques clics, en renseignant des informations
-      clés telles que le type d’anomalie, le lieu concerné, la description du
-      problème et la date de déclaration. Une fois enregistrée, chaque anomalie
-      pouvait être suivie en temps réel, avec un statut évolutif indiquant si
-      elle était en attente, en cours de résolution ou résolue.
+      J’ai été le seul développeur en charge du projet, ce qui m’a permis de gérer l’intégralité de la chaîne de développement : de l’analyse du besoin à la mise en production. Côté back-end, j’ai utilisé Laravel pour concevoir une architecture modulaire, évolutive et sécurisée. J’ai défini la structure de la base de données, créé les modèles Eloquent, les contrôleurs REST, et les politiques d’accès. J’ai également mis en place un système de rôles pour différencier les droits d’accès selon les profils utilisateurs (techniciens, responsables, administrateurs).
     </p>
     <p>
-      Pour garantir une organisation efficace, j’ai mis en place une
-      classification des anomalies en plusieurs catégories distinctes. Chaque
-      problème relevé pouvait ainsi être associé à un type d’anomalie
-      spécifique, comme une panne électrique, un problème de plomberie, un
-      dysfonctionnement de climatisation ou une défaillance du réseau
-      informatique. De plus, les interventions étaient réparties selon leur
-      localisation précise, incluant les salles de classe, les bureaux
-      administratifs, le gymnase ou encore les dortoirs. Enfin, pour une
-      meilleure gestion des espaces, l’application permettait également de
-      catégoriser les zones d’intervention par secteur, qu’il s’agisse du
-      Village A, du bâtiment B, des espaces extérieurs ou de la voirie.
+      Le front-end a été réalisé avec Blade, enrichi par des scripts JavaScript pour ajouter des fonctionnalités dynamiques comme les filtres interactifs, la recherche en temps réel, ou les menus contextuels. Le design a été pensé pour être intuitif, sobre et adapté à une utilisation quotidienne par des agents non techniques. L’ensemble du projet a été versionné avec Git et hébergé sur GitLab, et j’ai régulièrement livré des versions de test aux utilisateurs finaux pour recueillir leurs retours.
     </p>
     <p>
-      Grâce à cette modularité, l’application peut s’adapter aux besoins
-      spécifiques du campus, sans nécessiter de modifications techniques
-      majeures. Les administrateurs du service technique disposent d’un système
-      de gestion des paramètres leur permettant de créer, modifier ou supprimer
-      les catégories d’anomalies et les zones d’intervention selon l’évolution
-      des besoins.
-    </p>
-    <p>
-      Enfin, j’ai développé un tableau de bord interactif offrant aux
-      techniciens une vision d’ensemble sur les anomalies en attente, en cours
-      ou résolues. Cet outil intègre des fonctionnalités de filtrage et de
-      recherche avancée, facilitant l’accès rapide aux informations pertinentes
-      et optimisant le suivi des interventions.
+      Enfin, j’ai conçu un tableau de bord personnalisé regroupant des indicateurs clés : nombre d’anomalies ouvertes, temps moyen de résolution, répartition par catégorie ou secteur. Ces outils d’analyse aident les responsables à prendre des décisions stratégiques pour l’organisation des interventions.
     </p>
   </div>
 </section>
 
-<section class="section context" id="context">
+<section class="section context">
   <div class="section-content">
     <h2>🏢 Contexte et client</h2>
     <p>
-      Lilas a été développé pour le service technique de l’ENAP, qui avait
-      besoin d’une solution centralisée pour optimiser la gestion des
-      interventions techniques sur le campus. L’objectif était de remplacer les
-      procédures traditionnelles par une plateforme numérique efficace,
-      garantissant un suivi rigoureux et structuré des anomalies signalées.
+      L’ENAP est un établissement d’enseignement supérieur spécialisé dans la formation des personnels de l’administration pénitentiaire. Son campus s’étend sur plusieurs hectares et comprend des bâtiments de formation, des logements, des installations sportives et des zones techniques. Le service technique est en charge de l’entretien de cette infrastructure vaste et complexe.
     </p>
     <p>
-      L’application devait répondre à plusieurs enjeux clés. Il était essentiel
-      de simplifier le processus de déclaration des anomalies afin de permettre
-      une prise en charge rapide des problèmes. L’outil devait également
-      améliorer la traçabilité des interventions en offrant une vue détaillée
-      sur les anomalies en cours et les actions entreprises.
-    </p>
-    <p>
-      Il fallait aussi permettre une gestion flexible des types d’anomalies et
-      des lieux d’intervention, afin d’adapter l’outil aux besoins évolutifs du
-      campus. Enfin, l’interface devait être intuitive et facile à prendre en
-      main pour les techniciens, garantissant ainsi une adoption rapide et
-      efficace.
+      Les anomalies à gérer sont nombreuses et variées : pannes de chauffage, fuites d’eau, défaillances électriques, problèmes de voirie, etc. Le besoin d’un outil structurant et fiable était donc crucial. Lilas s’est imposé comme un outil central dans l’organisation quotidienne du service. L’application a également été pensée pour être utilisable sur ordinateur et sur tablette, facilitant son utilisation sur le terrain.
     </p>
   </div>
   <img src="assets/images/projects/context.png" alt="Illustration contexte" />
 </section>
 
 <section class="section objective">
-  <img
-    src="assets/images/projects/objective.jpg"
-    alt="Illustration objectifs"
-  />
+  <img src="assets/images/projects/objective.jpg" alt="Illustration objectifs" />
   <div class="section-content">
     <h2>🎯 Objectifs, défis et enjeux</h2>
     <p>
-      Le principal défi de ce projet était de concevoir une solution capable de
-      s’adapter aux différentes réalités du terrain. L’application devait être
-      rapide, intuitive et évolutive, tout en permettant un suivi détaillé des
-      interventions techniques.
+      L’un des principaux objectifs était de fournir un outil simple d’utilisation, mais suffisamment puissant pour couvrir tous les cas d’usage. Il fallait éviter toute surcharge fonctionnelle, tout en garantissant une couverture complète des besoins. La grande diversité des anomalies et des acteurs impliqués représentait un défi important en termes de modélisation.
     </p>
     <p>
-      Un enjeu majeur était d’assurer une gestion dynamique des paramètres : les
-      techniciens devaient pouvoir ajouter de nouveaux types d’anomalies, de
-      nouveaux lieux d’intervention, et adapter l’outil en fonction des
-      évolutions du campus, sans nécessiter de modifications dans le code. Cette
-      exigence a conduit à la mise en place d’un système d’administration
-      avancé, permettant aux utilisateurs autorisés de personnaliser entièrement
-      la structure des données.
+      Un autre enjeu majeur était la pérennité du système. J’ai donc veillé à documenter le projet, à structurer le code de manière modulaire, et à adopter les bonnes pratiques de développement Laravel. Le code est lisible, testable et maintenable, facilitant son évolution future par d’autres développeurs.
     </p>
     <p>
-      Un autre défi technique était d’optimiser les performances, en
-      garantissant un accès rapide aux anomalies signalées et en permettant des
-      recherches efficaces parmi un grand volume d’incidents. J’ai donc mis en
-      place des requêtes SQL optimisées, ainsi qu’un système de pagination et de
-      filtres avancés pour améliorer la navigation dans l’application.
+      Enfin, la notion de personnalisation a été centrale : chaque paramètre (type, lieu, secteur) peut être modifié ou étendu via l’interface d’administration, sans intervention technique. Cela permet à l’équipe d’adapter l’outil au fil du temps.
     </p>
   </div>
 </section>
@@ -142,80 +63,30 @@
   <div class="section-content">
     <h2>⚙️ Processus de développement</h2>
     <p>
-      Le développement de Lilas a suivi une approche méthodique, structurée en
-      plusieurs étapes afin de garantir une solution efficace et adaptée aux
-      besoins des techniciens du campus. La première phase a consisté en une
-      analyse approfondie des besoins en collaboration avec les équipes de
-      maintenance, afin d’identifier les fonctionnalités essentielles et de
-      prioriser les différentes exigences du projet.
+      Le projet a démarré par une série d’ateliers avec les agents du service technique, afin de recenser les pratiques existantes et les traduire en fonctionnalités numériques. J’ai ensuite formalisé les besoins en user stories, puis défini le modèle de données associé. Chaque entité (anomalie, lieu, type, secteur) a été soigneusement modélisée pour permettre une navigation rapide et des opérations CRUD efficaces.
     </p>
     <p>
-      Une fois les attentes définies, la conception de l’architecture de
-      l’application a été réalisée. La base de données relationnelle a été
-      pensée pour structurer efficacement les informations autour des anomalies
-      signalées, des lieux d’intervention et des différents secteurs concernés.
-      Cette structuration rigoureuse a permis de garantir une gestion fluide et
-      évolutive des interventions techniques.
+      L’implémentation s’est faite de façon incrémentale. J’ai livré une première version avec la gestion de base des anomalies, puis ajouté les modules de filtre, les exports CSV, et enfin le tableau de bord. À chaque itération, j’ai pris en compte les retours des utilisateurs finaux pour affiner l’ergonomie et les priorités fonctionnelles. Des tests manuels ont été réalisés sur chaque version.
     </p>
     <p>
-      Sur le plan technique, le développement du back-end a été mené avec
-      Laravel, mettant en place un système robuste de gestion des anomalies
-      ainsi qu’un ensemble de paramètres dynamiques permettant d’adapter
-      l’application aux évolutions des besoins. En parallèle, le front-end a été
-      développé avec Blade et JavaScript, assurant une interface utilisateur
-      intuitive et ergonomique, facilitant l’accès aux différentes
-      fonctionnalités et optimisant la navigation.
-    </p>
-    <p>
-      Une attention particulière a été portée à l’optimisation de la
-      visualisation des interventions grâce à l’intégration d’un tableau de bord
-      interactif. Cet outil, couplé à des filtres avancés, permet aux
-      techniciens de suivre en temps réel l’état des anomalies, d’identifier les
-      tâches prioritaires et de retrouver rapidement les informations
-      pertinentes.
-    </p>
-    <p>
-      Avant le déploiement, une phase de test approfondie a été menée, avec des
-      retours réguliers des techniciens afin d’ajuster et d’améliorer
-      l’application en fonction des besoins concrets du terrain. Enfin, pour
-      assurer une adoption fluide de l’outil, une formation a été dispensée aux
-      utilisateurs, accompagnée d’un suivi afin de garantir une prise en main
-      rapide et efficace du système.
+      Enfin, une formation a été organisée à l’ENAP auprès des agents, accompagnée d’un support de prise en main. L’application est aujourd’hui pleinement opérationnelle et utilisée quotidiennement par l’équipe technique.
     </p>
   </div>
   <img src="assets/images/projects/process.png" alt="Illustration processus" />
 </section>
 
 <section class="section conclusion">
-  <img
-    src="assets/images/projects/conclusion.jpg"
-    alt="Illustration conclusion"
-  />
+  <img src="assets/images/projects/conclusion.jpg" alt="Illustration conclusion" />
   <div class="section-content">
     <h2>🏁 Conclusion et apprentissages</h2>
     <p>
-      Le développement de Lilas a été une expérience enrichissante, qui m’a
-      permis de travailler sur un projet ayant un impact direct sur
-      l’organisation interne du campus.
+      Lilas représente l’un des projets les plus complets que j’ai réalisés en autonomie. Il m’a permis de consolider mes compétences sur Laravel, d’approfondir mes pratiques de structuration de base de données, de gestion des rôles et d’interfaces administrables. Ce projet m’a aussi confronté à la gestion d’un cycle de développement complet, en lien direct avec un client non technique.
     </p>
     <p>
-      Ce projet m’a offert l’opportunité de renforcer mes compétences sur
-      Laravel, en développant une application modulaire, performante et
-      évolutive. J’ai également approfondi mes connaissances en gestion de bases
-      de données relationnelles, notamment sur l’optimisation des requêtes SQL
-      et la structuration des modèles de données.
+      Avec l’expérience acquise, je conseillerais de toujours impliquer les utilisateurs finaux dès la conception, d’itérer régulièrement avec eux, et de prévoir une interface de gestion la plus souple possible. Cela permet d’assurer la durabilité du projet sans dépendre d’un profil technique en continu.
     </p>
     <p>
-      Au-delà des aspects techniques, cette mission m’a appris à concevoir une
-      solution logicielle en fonction des besoins métiers, en mettant l’accent
-      sur l’ergonomie, la simplicité d’utilisation et la scalabilité.
-    </p>
-    <p>
-      Grâce à Lilas, le service technique de l’ENAP dispose désormais d’un outil
-      moderne et adapté, qui facilite le suivi des interventions et améliore la
-      réactivité des équipes techniques. Ce projet m’a conforté dans mon envie
-      de développer des solutions logicielles intelligentes, capables de
-      répondre efficacement aux besoins spécifiques d’une organisation.
+      À moyen terme, je souhaite continuer à travailler sur des outils métiers à fort impact, et approfondir l’automatisation des tests et des déploiements dans ce type d’applications. Lilas m’a prouvé qu’un projet bien structuré, même simple sur le papier, peut réellement transformer l’efficacité d’un service.
     </p>
   </div>
 </section>
@@ -226,10 +97,7 @@
     <div class="skills-container">
       <div class="skill-card">
         <h3>Gestion de projets</h3>
-        <img
-          src="assets/images/proGestionViolet.png"
-          alt="Illustration compétence"
-        />
+        <img src="assets/images/proGestionViolet.png" alt="Illustration compétence" />
         <a routerLink="/gestion-de-projets" class="btn">Voir la compétence</a>
       </div>
       <div class="skill-card">
@@ -244,18 +112,12 @@
       </div>
       <div class="skill-card">
         <h3>Communication</h3>
-        <img
-          src="assets/images/communicationViolet.png"
-          alt="Illustration compétence"
-        />
+        <img src="assets/images/communicationViolet.png" alt="Illustration compétence" />
         <a routerLink="/communication" class="btn">Voir la compétence</a>
       </div>
       <div class="skill-card">
         <h3>Laravel</h3>
-        <img
-          src="assets/images/laravelViolet.png"
-          alt="Illustration compétence"
-        />
+        <img src="assets/images/laravelViolet.png" alt="Illustration compétence" />
         <a routerLink="/laravel" class="btn">Voir la compétence</a>
       </div>
     </div>

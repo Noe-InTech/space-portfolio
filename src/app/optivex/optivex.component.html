@@ -2,22 +2,10 @@
   <div class="section-content mission-content">
     <h1>Optivex</h1>
     <p>
-      Dans le cadre de mon projet en développement mobile, j’ai conçu et
-      développé Optivex, une application Android dédiée à la gestion et à
-      l’optimisation des trajets des livreurs de UPSA. L’entreprise, spécialisée
-      dans la production et la distribution de médicaments, possède plusieurs
-      sites logistiques entre lesquels transitent quotidiennement des
-      marchandises.
+      Dans le cadre d'un projet académique de développement mobile, j'ai développé avec un camarade l'application <strong>Optivex</strong>, une solution Android destinée à améliorer la gestion des trajets de livraison pour l'entreprise pharmaceutique <strong>UPSA</strong>. L'application visait à permettre aux livreurs de répertorier, consulter et planifier leurs déplacements entre les différents sites logistiques de l'entreprise.
     </p>
-
     <p>
-      L’objectif principal de Optivex était de permettre aux livreurs
-      d’enregistrer et de consulter leurs trajets afin d’améliorer la gestion
-      des déplacements et d’optimiser les itinéraires entre les différents
-      locaux de l’entreprise. L’application a été pensée pour faciliter
-      l’organisation du travail des livreurs, en leur offrant un outil simple et
-      efficace, permettant de retrouver les trajets les plus pertinents et
-      d’enregistrer de nouveaux itinéraires en fonction des besoins.
+      L'application permet d'enregistrer chaque trajet effectué avec des données clés (lieux de départ et d'arrivée, heure, commentaires), d'accéder à un historique des parcours, et de rechercher les trajets similaires pour optimiser les futurs déplacements. L'objectif principal était de proposer une application mobile <em>légère, fiable et fonctionnant hors-ligne</em> pour un usage sur le terrain.
     </p>
   </div>
   <img src="assets/images/projects/optivex.jpg" alt="Illustration mission" />
@@ -28,79 +16,42 @@
   <div class="section-content">
     <h2>👨‍💻 Mon rôle dans le projet</h2>
     <p>
-      En tant que développeur, j’ai été chargé avec des camarades, de la
-      conception et du développement complet de l’application mobile. Dans un
-      premier temps, j’ai travaillé sur la structuration du projet en
-      définissant l’architecture de l’application et en mettant en place une
-      base de données locale permettant de stocker les trajets enregistrés par
-      les livreurs.
+      J'ai pris en charge toute la partie <strong>technique</strong> : conception de la base de données SQLite, développement des interfaces avec <strong>Android Studio</strong> en Java, logique métier (ajout/suppression/modification de trajets), et mise en place de tests utilisateurs.
     </p>
     <p>
-      Ensuite, j’ai développé une interface utilisateur fluide et intuitive,
-      garantissant une prise en main rapide et une navigation efficace. L’un des
-      défis majeurs de ce projet a été de concevoir un système de gestion des
-      trajets capable d’assurer un accès rapide aux informations essentielles,
-      tout en permettant aux utilisateurs de modifier, supprimer ou ajouter des
-      trajets en quelques secondes.
+      J'ai conçu une architecture basée sur un <strong>modèle MVC</strong> local : des classes Java représentant les trajets, un accès persisté via un <code>SQLiteOpenHelper</code> personnalisé, et des activités Android liées aux différents écrans de l'application. Chaque opération CRUD est implémentée avec une logique claire et isolée.
     </p>
     <p>
-      Enfin, j’ai mené plusieurs phases de tests et d’améliorations pour
-      garantir la fiabilité et la performance de l’application, en tenant compte
-      des retours des utilisateurs et des contraintes spécifiques du métier de
-      livreur.
+      L'interface est conçue pour fonctionner avec une seule main : boutons d'action flottants, navigation simple, saisie rapide. J'ai également ajouté une fonctionnalité de tri des trajets par date et une recherche textuelle pour améliorer l'utilisabilité de l'application.
     </p>
   </div>
 </section>
 
-<section class="section context" id="context">
+<section class="section context">
   <div class="section-content">
     <h2>🏢 Contexte et client</h2>
     <p>
-      Le projet Optivex a été développé en réponse à un besoin concret exprimé
-      par UPSA, une entreprise du secteur pharmaceutique nécessitant une
-      meilleure gestion des trajets de livraison entre ses différents sites.
-      L’objectif était d’offrir aux livreurs une solution mobile intuitive et
-      efficace, leur permettant de savoir précisément ce qui a été livré, et
-      d’optimiser l’utilisation des véhicules de livraison.
+      Le projet répond à un besoin formulé par <strong>UPSA</strong>, dans un contexte où les livreurs doivent gérer eux-mêmes leurs parcours quotidiens entre différents sites internes. Il n'existait aucun outil numérique permettant de garder une trace de ces déplacements ou d'en optimiser la récurrence.
     </p>
     <p>
-      En proposant cette application, UPSA souhaitait réduire les temps de
-      trajet, améliorer la planification des livraisons, et faciliter le suivi
-      des parcours effectués. Ce projet s’inscrit dans une démarche de
-      modernisation des outils de travail au sein de l’entreprise, tout en
-      apportant une meilleure traçabilité des déplacements des livreurs.
+      L'objectif du projet était d'apporter une solution concrète et facilement déployable dans le quotidien des livreurs, qui soit <strong>autonome, locale</strong>, et ne nécessite aucune connexion internet.
     </p>
   </div>
   <img src="assets/images/projects/context.png" alt="Illustration contexte" />
 </section>
 
 <section class="section objective">
-  <img
-    src="assets/images/projects/objective.jpg"
-    alt="Illustration objectifs"
-  />
+  <img src="assets/images/projects/objective.jpg" alt="Illustration objectifs" />
   <div class="section-content">
-    <h2>🎯 Objectifs, défis et enjeux</h2>
+    <h2>🌟 Objectifs, défis et enjeux</h2>
     <p>
-      L’un des principaux enjeux du projet résidait dans la simplicité
-      d’utilisation de l’application. Il était impératif que les livreurs
-      puissent enregistrer et consulter leurs trajets sans perte de temps, tout
-      en assurant une gestion efficace des données. L’application devait être
-      utilisable même en l’absence de connexion internet, d’où l’intégration
-      d’une base de données locale pour stocker les informations en toute
-      autonomie.
+      Le principal objectif était d'assurer une <strong>prise en main rapide</strong> : les livreurs devaient pouvoir enregistrer un trajet en moins de 15 secondes. Cela a guidé la simplification maximale des interfaces.
     </p>
     <p>
-      Un autre défi technique était de concevoir une interface ergonomique,
-      capable d’afficher de manière claire et intuitive les trajets effectués et
-      les nouvelles destinations à enregistrer. La fluidité et la rapidité
-      d’exécution étaient des critères essentiels pour garantir une expérience
-      utilisateur optimale.
+      La <strong>gestion hors-ligne</strong> était un autre défi : j'ai donc été amené à concevoir une base de données SQLite adaptée et légère, tout en gérant les conflits de synchronisation potentiels lors des tests d’extension future vers une version connectée.
     </p>
     <p>
-      En plus des aspects techniques, le projet devait répondre aux exigences
-      logistiques de l’entreprise en proposant un outil capable de s’adapter aux
-      contraintes des livreurs sur le terrain.
+      Enfin, la simplicité de l'app devait s'accompagner de <strong>performances constantes</strong> : chargement instantané des listes, enregistrement en arrière-plan, manipulation fluide des données.
     </p>
   </div>
 </section>
@@ -109,66 +60,33 @@
   <div class="section-content">
     <h2>⚙️ Processus de développement</h2>
     <p>
-      Le développement d’Optivex s’est déroulé en plusieurs étapes. La première
-      phase a consisté à étudier les besoins des utilisateurs en échangeant
-      directement avec les professionnels pour comprendre leurs contraintes et
-      attentes. À partir de ces retours, une architecture claire et modulaire a
-      pu être pensée pour structurer l’application de manière efficace.
+      J'ai commencé par une <strong>étude terrain</strong> : entretiens avec les livreurs, repérage des parcours, observation de leur journée type. Ces échanges m'ont permis de rédiger des user stories claires : "En tant que livreur, je veux ajouter un trajet rapidement", "je veux consulter mes trajets par date", etc.
     </p>
     <p>
-      Android Studio et Java ont été utilisés pourle développement, en intégrant
-      une base de données SQLite permettant aux livreurs de gérer leurs trajets
-      même en mode hors ligne. Une attention particulière a été portée à
-      l’optimisation des performances, afin d’assurer des temps de réponse
-      rapides et une navigation fluide au sein de l’application.
+      Ensuite, j'ai conçu la base SQLite via un schéma en 3 tables : <code>Trajets</code>, <code>Sites</code> et <code>Commentaires</code>. Chaque élément est lié avec des clés étrangères et des contraintes d'intégrité.
     </p>
     <p>
-      Durant la phase de développement, j’ai également mis en place un système
-      de gestion des trajets permettant aux livreurs d’ajouter, modifier et
-      consulter leurs trajets en quelques clics. L’objectif était de simplifier
-      au maximum les interactions, afin d’améliorer l’efficacité et de minimiser
-      le temps passé sur l’application lors des livraisons.
+      Le code a été écrit en Java avec Android SDK. J'ai créé des adaptateurs personnalisés pour les listes de trajets, géré le cycle de vie des activités, et appliqué le pattern ViewHolder pour améliorer les performances.
     </p>
     <p>
-      Une fois la première version fonctionnelle, Une série de tests a pu être
-      réalisée pour valider la stabilité et la robustesse de l’application, en
-      simulant différents scénarios d’utilisation. Ces tests ont permis
-      d’identifier et de corriger certains points d’amélioration avant le
-      déploiement final.
+      Des tests unitaires sur les opérations SQLite ont été réalisés, et une première version a été testée par plusieurs utilisateurs réels. Les retours ont permis d'affiner la navigation, les libellés, et d'ajouter des raccourcis d'ajout rapide de trajet.
     </p>
   </div>
   <img src="assets/images/projects/process.png" alt="Illustration processus" />
 </section>
 
 <section class="section conclusion">
-  <img
-    src="assets/images/projects/conclusion.jpg"
-    alt="Illustration conclusion"
-  />
+  <img src="assets/images/projects/conclusion.jpg" alt="Illustration conclusion" />
   <div class="section-content">
     <h2>🏁 Conclusion et apprentissages</h2>
     <p>
-      Le développement d’Optivex a été une expérience particulièrement
-      enrichissante, tant d’un point de vue technique que dans la compréhension
-      des enjeux logistiques liés aux trajets de livraison. Ce projet m’a permis
-      de renforcer mes compétences en développement mobile, notamment sur la
-      gestion des bases de données locales avec SQLite, ainsi que sur la
-      conception d’interfaces optimisées pour un usage en entreprise.
+      Optivex a été une véritable immersion dans le développement mobile Android, avec une attention particulière portée à la simplicité d'usage et à la gestion de données hors-ligne. J'ai appris à structurer un projet autour des besoins métiers, à modéliser des données concrètes et à livrer une application fonctionnelle avec un fort enjeu terrain.
     </p>
     <p>
-      J’ai également pu travailler sur des problématiques concrètes liées à la
-      logistique du transport et à l’optimisation des déplacements. Cette
-      expérience m’a apporté une vision plus précise des exigences métiers et de
-      l’importance d’adapter une solution logicielle aux besoins réels des
-      utilisateurs.
+      Cette expérience m'a aussi permis de maîtriser les outils dédiés au mobile (emulateur, debug tools, layout editor), et d'aborder la gestion mémoire dans les interfaces Android.
     </p>
     <p>
-      Grâce à ce projet, j’ai pu approfondir ma capacité à analyser un besoin
-      métier, à concevoir une solution technique adaptée et à développer une
-      application mobile performante et intuitive. Optivex a permis d’améliorer
-      la gestion des trajets chez UPSA, et a démontré l’intérêt d’utiliser des
-      outils numériques pour optimiser les processus logistiques au sein des
-      entreprises.
+      Elle m'a conforté dans mon intérêt pour les projets où l'efficacité fonctionnelle prime, et m'a donné l'envie de continuer à explorer l'optimisation d'applications mobiles dans des contextes logistiques ou industriels.
     </p>
   </div>
 </section>
@@ -179,10 +97,7 @@
     <div class="skills-container">
       <div class="skill-card">
         <h3>Gestion de projets</h3>
-        <img
-          src="assets/images/proGestionViolet.png"
-          alt="Illustration compétence"
-        />
+        <img src="assets/images/proGestionViolet.png" alt="Illustration compétence" />
         <a routerLink="/gestion-de-projets" class="btn">Voir la compétence</a>
       </div>
       <div class="skill-card">
@@ -197,10 +112,7 @@
       </div>
       <div class="skill-card">
         <h3>Communication</h3>
-        <img
-          src="assets/images/communicationViolet.png"
-          alt="Illustration compétence"
-        />
+        <img src="assets/images/communicationViolet.png" alt="Illustration compétence" />
         <a routerLink="/communication" class="btn">Voir la compétence</a>
       </div>
       <div class="skill-card">
@@ -210,10 +122,7 @@
       </div>
       <div class="skill-card">
         <h3>Android</h3>
-        <img
-          src="assets/images/android-osViolet.png"
-          alt="Illustration compétence"
-        />
+        <img src="assets/images/android-osViolet.png" alt="Illustration compétence" />
         <a routerLink="/android" class="btn">Voir la compétence</a>
       </div>
     </div>
