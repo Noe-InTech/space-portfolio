@@ -2,10 +2,16 @@
   <div class="section-content mission-content">
     <h1>Optivex</h1>
     <p>
-      Dans le cadre d'un projet académique de développement mobile, j'ai développé avec un camarade l'application <strong>Optivex</strong>, une solution Android destinée à améliorer la gestion des trajets de livraison pour l'entreprise pharmaceutique <strong>UPSA</strong>. L'application visait à permettre aux livreurs de répertorier, consulter et planifier leurs déplacements entre les différents sites logistiques de l'entreprise.
+      Dans le cadre d'un projet académique de développement mobile, j'ai développé avec un camarade l'application
+      <strong>Optivex</strong>, une solution Android destinée à améliorer la gestion des trajets de livraison pour
+      l'entreprise pharmaceutique <strong>UPSA</strong>. L'application visait à permettre aux livreurs de répertorier,
+      consulter et planifier leurs déplacements entre les différents sites logistiques de l'entreprise.
     </p>
     <p>
-      L'application permet d'enregistrer chaque trajet effectué avec des données clés (lieux de départ et d'arrivée, heure, commentaires), d'accéder à un historique des parcours, et de rechercher les trajets similaires pour optimiser les futurs déplacements. L'objectif principal était de proposer une application mobile <em>légère, fiable et fonctionnant hors-ligne</em> pour un usage sur le terrain.
+      L'application permet d'enregistrer chaque trajet effectué avec des données clés (lieux de départ et d'arrivée,
+      heure, commentaires), d'accéder à un historique des parcours, et de rechercher les trajets similaires pour
+      optimiser les futurs déplacements. L'objectif principal était de proposer une application mobile <em>légère,
+        fiable et fonctionnant hors-ligne</em> pour un usage sur le terrain.
     </p>
   </div>
   <img src="assets/images/projects/optivex.jpg" alt="Illustration mission" />
@@ -16,13 +22,19 @@
   <div class="section-content">
     <h2>👨‍💻 Mon rôle dans le projet</h2>
     <p>
-      J'ai pris en charge toute la partie <strong>technique</strong> : conception de la base de données SQLite, développement des interfaces avec <strong>Android Studio</strong> en Java, logique métier (ajout/suppression/modification de trajets), et mise en place de tests utilisateurs.
+      J'ai pris en charge toute la partie <strong>technique</strong> : conception de la base de données SQLite,
+      développement des interfaces avec <strong>Android Studio</strong> en Java, logique métier
+      (ajout/suppression/modification de trajets), et mise en place de tests utilisateurs.
     </p>
     <p>
-      J'ai conçu une architecture basée sur un <strong>modèle MVC</strong> local : des classes Java représentant les trajets, un accès persisté via un <code>SQLiteOpenHelper</code> personnalisé, et des activités Android liées aux différents écrans de l'application. Chaque opération CRUD est implémentée avec une logique claire et isolée.
+      J'ai conçu une architecture basée sur un <strong>modèle MVC</strong> local : des classes Java représentant les
+      trajets, un accès persisté via un <code>SQLiteOpenHelper</code> personnalisé, et des activités Android liées aux
+      différents écrans de l'application. Chaque opération CRUD est implémentée avec une logique claire et isolée.
     </p>
     <p>
-      L'interface est conçue pour fonctionner avec une seule main : boutons d'action flottants, navigation simple, saisie rapide. J'ai également ajouté une fonctionnalité de tri des trajets par date et une recherche textuelle pour améliorer l'utilisabilité de l'application.
+      L'interface est conçue pour fonctionner avec une seule main : boutons d'action flottants, navigation simple,
+      saisie rapide. J'ai également ajouté une fonctionnalité de tri des trajets par date et une recherche textuelle
+      pour améliorer l'utilisabilité de l'application.
     </p>
   </div>
 </section>
@@ -31,10 +43,13 @@
   <div class="section-content">
     <h2>🏢 Contexte et client</h2>
     <p>
-      Le projet répond à un besoin formulé par <strong>UPSA</strong>, dans un contexte où les livreurs doivent gérer eux-mêmes leurs parcours quotidiens entre différents sites internes. Il n'existait aucun outil numérique permettant de garder une trace de ces déplacements ou d'en optimiser la récurrence.
+      Le projet répond à un besoin formulé par <strong>UPSA</strong>, dans un contexte où les livreurs doivent gérer
+      eux-mêmes leurs parcours quotidiens entre différents sites internes. Il n'existait aucun outil numérique
+      permettant de garder une trace de ces déplacements ou d'en optimiser la récurrence.
     </p>
     <p>
-      L'objectif du projet était d'apporter une solution concrète et facilement déployable dans le quotidien des livreurs, qui soit <strong>autonome, locale</strong>, et ne nécessite aucune connexion internet.
+      L'objectif du projet était d'apporter une solution concrète et facilement déployable dans le quotidien des
+      livreurs, qui soit <strong>autonome, locale</strong>, et ne nécessite aucune connexion internet.
     </p>
   </div>
   <img src="assets/images/projects/context.png" alt="Illustration contexte" />
@@ -45,34 +60,60 @@
   <div class="section-content">
     <h2>🌟 Objectifs, défis et enjeux</h2>
     <p>
-      Le principal objectif était d'assurer une <strong>prise en main rapide</strong> : les livreurs devaient pouvoir enregistrer un trajet en moins de 15 secondes. Cela a guidé la simplification maximale des interfaces.
+      Le principal objectif était d'assurer une <strong>prise en main rapide</strong> : les livreurs devaient pouvoir
+      enregistrer un trajet en moins de 15 secondes. Cela a guidé la simplification maximale des interfaces.
     </p>
     <p>
-      La <strong>gestion hors-ligne</strong> était un autre défi : j'ai donc été amené à concevoir une base de données SQLite adaptée et légère, tout en gérant les conflits de synchronisation potentiels lors des tests d’extension future vers une version connectée.
+      La <strong>gestion hors-ligne</strong> était un autre défi : j'ai donc été amené à concevoir une base de données
+      SQLite adaptée et légère, tout en gérant les conflits de synchronisation potentiels lors des tests d’extension
+      future vers une version connectée.
     </p>
     <p>
-      Enfin, la simplicité de l'app devait s'accompagner de <strong>performances constantes</strong> : chargement instantané des listes, enregistrement en arrière-plan, manipulation fluide des données.
+      Enfin, la simplicité de l'app devait s'accompagner de <strong>performances constantes</strong> : chargement
+      instantané des listes, enregistrement en arrière-plan, manipulation fluide des données.
     </p>
   </div>
 </section>
 
 <section class="section process">
   <div class="section-content">
-    <h2>⚙️ Processus de développement</h2>
+    <h2>⚙️ Étapes de réalisation</h2>
     <p>
-      J'ai commencé par une <strong>étude terrain</strong> : entretiens avec les livreurs, repérage des parcours, observation de leur journée type. Ces échanges m'ont permis de rédiger des user stories claires : "En tant que livreur, je veux ajouter un trajet rapidement", "je veux consulter mes trajets par date", etc.
+      Le développement d’Optivex s’est déroulé en plusieurs phases structurées, à la manière d’une mini-méthodologie
+      agile.
     </p>
     <p>
-      Ensuite, j'ai conçu la base SQLite via un schéma en 3 tables : <code>Trajets</code>, <code>Sites</code> et <code>Commentaires</code>. Chaque élément est lié avec des clés étrangères et des contraintes d'intégrité.
+      Nous avons commencé par une immersion dans le contexte métier : échanges avec le personnel logistique d’UPSA,
+      identification des points de friction quotidiens comme l’oubli de trajets, le manque de traçabilité ou une
+      planification inefficace. Ces échanges ont permis de formaliser les besoins dans un document de cadrage.
     </p>
     <p>
-      Le code a été écrit en Java avec Android SDK. J'ai créé des adaptateurs personnalisés pour les listes de trajets, géré le cycle de vie des activités, et appliqué le pattern ViewHolder pour améliorer les performances.
+      À partir de là, nous avons formulé des user stories concrètes : par exemple, permettre à un livreur d’enregistrer
+      un trajet en quelques secondes, de consulter ses trajets passés selon la date, ou encore de retrouver facilement
+      les trajets similaires déjà effectués.
     </p>
     <p>
-      Des tests unitaires sur les opérations SQLite ont été réalisés, et une première version a été testée par plusieurs utilisateurs réels. Les retours ont permis d'affiner la navigation, les libellés, et d'ajouter des raccourcis d'ajout rapide de trajet.
+      Nous avons ensuite conçu un schéma de base de données SQLite structuré autour de trois entités : les trajets, les
+      sites, et les commentaires. Chaque entité a été reliée par des identifiants et des contraintes d’intégrité,
+      permettant une gestion efficace des données.
+    </p>
+    <p>
+      Le développement s’est fait avec Android Studio, en Java. Nous avons mis en œuvre une architecture MVC, avec une
+      séparation claire entre les modèles de données, les vues pensées pour être utilisées à une main, et les
+      contrôleurs assurant les règles métier. L’interface intègre des boutons flottants, des champs de saisie rapides,
+      et des raccourcis d’enregistrement.
+    </p>
+    <p>
+      Une première version a été testée par plusieurs utilisateurs réels. Les retours ont permis d’améliorer la
+      lisibilité des libellés, d’ajouter une fonction de duplication de trajets pour les tournées régulières, et de
+      réduire le nombre d’étapes nécessaires à l’ajout d’un trajet.
+    </p>
+    <p>
+      Le prototype final a été présenté à un jury académique et à des membres de l’entreprise UPSA, dans le cadre d’une
+      démonstration contextualisée. Une documentation technique et un guide utilisateur ont été fournis.
     </p>
   </div>
-  <img src="assets/images/projects/process.png" alt="Illustration processus" />
+  <img src="assets/images/projects/process.png" alt="Illustration processus enrichi" />
 </section>
 
 <section class="section conclusion">
@@ -80,13 +121,19 @@
   <div class="section-content">
     <h2>🏁 Conclusion et apprentissages</h2>
     <p>
-      Optivex a été une véritable immersion dans le développement mobile Android, avec une attention particulière portée à la simplicité d'usage et à la gestion de données hors-ligne. J'ai appris à structurer un projet autour des besoins métiers, à modéliser des données concrètes et à livrer une application fonctionnelle avec un fort enjeu terrain.
+      Optivex a été une véritable immersion dans le développement mobile Android, avec une attention particulière portée
+      à la simplicité d'usage et à la gestion de données hors-ligne. J'ai appris à structurer un projet autour des
+      besoins métiers, à modéliser des données concrètes et à livrer une application fonctionnelle avec un fort enjeu
+      terrain.
     </p>
     <p>
-      Cette expérience m'a aussi permis de maîtriser les outils dédiés au mobile (emulateur, debug tools, layout editor), et d'aborder la gestion mémoire dans les interfaces Android.
+      Cette expérience m'a aussi permis de maîtriser les outils dédiés au mobile comme l’émulateur, les outils de debug
+      ou le layout editor, et de mieux comprendre les contraintes liées à la gestion mémoire dans les interfaces
+      Android.
     </p>
     <p>
-      Elle m'a conforté dans mon intérêt pour les projets où l'efficacité fonctionnelle prime, et m'a donné l'envie de continuer à explorer l'optimisation d'applications mobiles dans des contextes logistiques ou industriels.
+      Elle m'a conforté dans mon intérêt pour les projets où l'efficacité fonctionnelle prime, et m'a donné l'envie de
+      continuer à explorer l'optimisation d'applications mobiles dans des contextes logistiques ou industriels.
     </p>
   </div>
 </section>

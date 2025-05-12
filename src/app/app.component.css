@@ -62,3 +62,10 @@ body {
   right: 1px;
   top: 0;
 }
+
+
+app-navigation-bar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
